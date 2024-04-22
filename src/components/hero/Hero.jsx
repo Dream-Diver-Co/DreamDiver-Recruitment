@@ -58,8 +58,8 @@ const Hero = () => {
                 className="text-lg mt-35 md-mt-30 mb-30 md-mb-20 pe-xl-5 wow fadeInUp"
                 data-wow-delay="0.5s"
               >
-                Unlock your potential with quality job &amp;earn from world
-                leading brands &amp;co.
+                Find your quality jobs &amp;earn from world leading brands
+                &amp;co.
               </p>
               <a
                 className="btn-five wow fadeInUp "

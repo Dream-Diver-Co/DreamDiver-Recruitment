@@ -9,7 +9,7 @@ const Nav = () => {
   // const [popoverHeight, setPopoverHeight] = useState(null);
   return (
     <nav onMouseLeave={() => setHovering(null)}>
-      <div className="flex gap-5 justify-between items-center text-base tracking-wide whitespace-nowrap max-md:flex-wrap">
+      <div className="flex gap-5 justify-content-center items-center text-base tracking-wide whitespace-nowrap max-md:flex-wrap">
         <img
           loading="lazy"
           src={logo}
