@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Manu0 from "./Manu0";
+import Manu2 from "./Manu2";
+import Manu3 from "./Manu3";
+import Manu1 from "./Manu1.jsx";
 
 const Nav = () => {
   const [hovering, setHovering] = useState(null);
@@ -72,7 +75,15 @@ const Nav = () => {
             }}
             className="absolute shadow bg-white mt-20 p-5 rounded w-[600px] overflow-hidden transform-gpu shadow-lg transition-all duration-300"
           >
-            <Manu0 />
+            {hovering === 0 ? (
+              <Manu0 />
+            ) : hovering === 1 ? (
+              <Manu1 />
+            ) : hovering === 2 ? (
+              <Manu2 />
+            ) : hovering === 3 ? (
+              <Manu3 />
+            ) : null}
           </div>
         )}
       </div>
