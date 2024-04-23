@@ -240,7 +240,23 @@
 .shapes {
   position: absolute;
 }
-
+/* video  */
+#myVideo {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.content {
+  top: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.829);
+  color: #ffffff;
+  min-width: 100%;
+  min-height: 100%;
+  padding: 20px;
+}
 .btn-five {
   font-weight: 500;
   padding: 13px 26px;
