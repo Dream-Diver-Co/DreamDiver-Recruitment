@@ -8,3 +8,24 @@
 .navbar-nav .nav-item .nav-link:hover {
   color: var(--green-primary) !important;
 }
+
+/* mega menu */
+.SiteMenu {
+  display: inline-block;
+  padding-top: 13px;
+  /* height: calc( + var(--siteMenuArrowSpacing)); */
+  /* transform: translateX(var(--siteMenuTranslateX)) */
+  /* rotateX(var(--siteMenuRotateX)); */
+  transform-origin: 50% -50px;
+  transition: 250ms;
+  transition-property: transform, width, height;
+  will-change: transform, width, height;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.SiteHeader__menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

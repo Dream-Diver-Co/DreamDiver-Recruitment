@@ -9,7 +9,7 @@ const Nav = () => {
   // const [popoverHeight, setPopoverHeight] = useState(null);
   return (
     <ul
-      className="navbar-nav me-auto mb-2 mb-lg-0"
+      className="navbar-nav m-auto mb-2 mb-lg-0"
       onMouseLeave={() => setHovering(null)}
     >
       <li className="nav-item">
@@ -42,7 +42,7 @@ const Nav = () => {
           style={{
             left: popoverLeft || 0,
           }}
-          className=""
+          className="position-absolute SiteMenu SiteHeader__menu"
         >
           {hovering === 0 ? <Manu0 /> : hovering === 1 ? <Manu1 /> : null}
         </div>

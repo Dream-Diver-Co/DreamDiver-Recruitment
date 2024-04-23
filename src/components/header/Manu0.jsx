@@ -1,13 +1,13 @@
 import React from "react";
-
+import "./manu.css";
 const Manu0 = () => {
   return (
-    <div className="">
-      <div className="justify-end mt- py-8 pl-7 bg-white max-w-[604px] max-md:pl-5">
-        <div className="flex gap-5 max-md:flex-col max-md:gap-0">
-          <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
-            <div className="flex flex-col grow self-stretch tracking-wide text-sky-950 max-md:mt-10">
-              <div className="flex gap-4">
+    <div className="card">
+      <div className="j bg-white ">
+        <div className="">
+          <div className="">
+            <div className=" text-sky-950 max-md:mt-10">
+              <div className="">
                 <img
                   alt=""
                   loading="lazy"
