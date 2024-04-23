@@ -1,7 +1,4 @@
 import React from "react";
-import banner1 from "../../assets/images/banner/banner1.svg";
-import banner2 from "../../assets/images/banner/banner2.svg";
-import banner3 from "../../assets/images/banner/banner3.svg";
 import partner1 from "../../assets/images/partner/partner1.webp";
 import partner2 from "../../assets/images/partner/partner2.webp";
 import partner3 from "../../assets/images/partner/partner3.webp";
