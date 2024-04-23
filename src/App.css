@@ -26,4 +26,5 @@ button {
   font-family: sans-serif;
   font-optical-sizing: auto;
   text-decoration: none !important;
+  border: none;
 }
