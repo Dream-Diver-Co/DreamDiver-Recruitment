@@ -52,7 +52,7 @@ const Hero = () => {
                 <h3>Online Marketplace</h3>
               </div>
               <h1 className="wow text-5xl fadeInUp" data-wow-delay="0.4s">
-                Find the talents for any job.
+                Find the talents <br /> for any job.
               </h1>
               <p
                 className="text-lg mt-35 md-mt-30 mb-30 md-mb-20 pe-xl-5 wow fadeInUp"

@@ -1,6 +1,12 @@
 /* google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+:root {
+  --green-primary: #00bf58;
+  --green-primary-hover: #244034;
+  --dark-primary: #000;
+}
+
 h1,
 h2,
 h3,
@@ -19,4 +25,5 @@ a,
 button {
   font-family: sans-serif;
   font-optical-sizing: auto;
+  text-decoration: none !important;
 }
