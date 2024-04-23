@@ -4,9 +4,9 @@ import logo from "../../assets/images/logo/logo.webp";
 import "./header.css";
 const Header = () => {
   return (
-    <nav class="navbar navbar-expand-lg ">
-      <div class="container">
-        <a class="navbar-brand logo" href="/">
+    <nav className="navbar navbar-expand-lg ">
+      <div className="container">
+        <a className="navbar-brand logo" href="/">
           <img
             src={logo}
             className="img-fluid"
@@ -14,7 +14,7 @@ const Header = () => {
           />
         </a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -22,14 +22,28 @@ const Header = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <Nav />
-          <div className="">
-            <a href="/"> login </a>
-            <span>|</span>
-            <a href="/"> register </a>
+          <div className="right-widget ms-auto ms-xl-5 order-lg-3">
+            <ul className="d-flex align-items-center style-none">
+              <li>
+                <a
+                  href="/"
+                  className="fw-500 login-btn-two"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+                >
+                  Login
+                </a>
+              </li>
+              <li className="d-none d-lg-block ms-4">
+                <a className="btn-five" href="/register">
+                  Register
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

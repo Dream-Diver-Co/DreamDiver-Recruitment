@@ -2,3 +2,15 @@
   height: 4rem !important;
   width: 4rem !important;
 }
+.style-none {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.login-btn-two {
+  color: var(--green-primary);
+}
+
+.login-btn-two:hover {
+  text-decoration: underline !important;
+}
