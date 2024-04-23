@@ -136,13 +136,17 @@
   color: #5ea17e;
 }
 
-.hero-banner-three .h1,
 .hero-banner-three h1 {
   font-weight: 700;
   letter-spacing: -1px;
   color: #005025;
 }
 
+.hero-banner-three h1 {
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #005025;
+}
 .hero-banner-three .partner-title {
   font-family: var(--eb_garamond-font);
   color: #93ad9f;
@@ -197,9 +201,6 @@
 }
 .mt-70 {
   margin-top: 70px;
-}
-.pt-120 {
-  padding-top: 120px;
 }
 .pb-80 {
   padding-bottom: 80px;

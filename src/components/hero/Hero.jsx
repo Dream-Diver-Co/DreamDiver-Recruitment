@@ -8,7 +8,7 @@ import partner3 from "../../assets/images/partner/partner3.webp";
 import "./hero.css";
 const Hero = () => {
   return (
-    <div className="hero-banner-three position-relative pt-120 md-pt-80 xs-pt-40 pb-80 lg-pb-20">
+    <div className="hero-banner-three position-relative md-pt-80 xs-pt-40 pb-80 lg-pb-20">
       <div className="img-box">
         <img
           alt="main-img"
@@ -49,9 +49,9 @@ const Hero = () => {
                 className="slogan fw-500 mb-5 wow fadeInUp"
                 data-wow-delay="0.3s"
               >
-                #1 Online Marketplace
+                <h3>Online Marketplace</h3>
               </div>
-              <h1 className="wow fadeInUp" data-wow-delay="0.4s">
+              <h1 className="wow text-5xl fadeInUp" data-wow-delay="0.4s">
                 Find the talents for any job.
               </h1>
               <p
