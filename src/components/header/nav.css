@@ -1,0 +1,10 @@
+.nav-link {
+  color: var(--dark-primary);
+}
+.navbar-nav .nav-item .active {
+  color: var(--green-primary) !important;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: var(--green-primary) !important;
+}
