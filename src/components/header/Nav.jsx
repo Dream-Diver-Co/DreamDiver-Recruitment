@@ -2,20 +2,13 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Manu0 from "./Manu0";
 import Manu1 from "./Manu1.jsx";
-import logo from "../../assets/images/logo/logo.png";
 const Nav = () => {
   const [hovering, setHovering] = useState(null);
   const [popoverLeft, setPopoverLeft] = useState(null);
   // const [popoverHeight, setPopoverHeight] = useState(null);
   return (
     <nav onMouseLeave={() => setHovering(null)}>
-      <div className="flex gap-5 justify-content-center items-center text-base tracking-wide whitespace-nowrap max-md:flex-wrap">
-        <img
-          loading="lazy"
-          src={logo}
-          className="shrink-0 self-stretch aspect-[2.04] w-[68px]"
-          alt="lazy"
-        />
+      <div className="flex gap-5 justify-items-center items-center text-white tracking-wide whitespace-nowrap max-md:flex-wrap">
         <a
           href="/"
           onMouseEnter={(event) => {
