@@ -1,29 +1,29 @@
-#buyer .grid-card {
+#employ .grid-card {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 2fr;
   grid-gap: 0.1rem;
   height: auto;
   cursor: pointer;
 }
 
-#buyer .card {
+#employ .card {
   transition: transform 0.3s ease-in-out; /* Smooth transition */
 }
 
-#buyer .card:hover {
+#employ .card:hover {
   transform: scale(1.05); /* Slightly larger scale on hover */
   z-index: 1;
 }
 
-#buyer .card0 {
-  grid-row: 1 / -3;
+#employ .card2 {
+  grid-row: span 2;
 }
 
-#buyer .card0 img {
+#employ .card4 img {
   height: 100%;
 }
 
-#buyer .card-hover {
+#employ .card-hover {
   width: 100%;
   display: none;
   padding: 1rem;
@@ -31,7 +31,7 @@
   opacity: 0; /* Initially hidden */
 }
 
-#buyer .card:hover .card-hover {
+#employ .card:hover .card-hover {
   display: block;
   opacity: 1; /* Fade in on hover */
 }

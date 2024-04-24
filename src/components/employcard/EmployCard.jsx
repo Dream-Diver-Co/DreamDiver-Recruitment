@@ -1,7 +1,7 @@
 import React from "react";
-import "./cardSection.css";
 import card1 from "../../assets/images/1817900-medicare.jpg";
-const CardSection = () => {
+import "./empoycard.css";
+const EmployCard = () => {
   const makeYourDreamCard = [
     {
       title: "AI generated art.",
@@ -35,9 +35,9 @@ const CardSection = () => {
     },
   ];
   return (
-    <section id="buyer">
+    <section className="my-5" id="employ">
       <div className="container">
-        <h1 style={{ color: "#005025" }}>Make your dreams a reality</h1>
+        <h1 style={{ color: "#005025" }}>Find Your perfect Employ</h1>
         <div className="grid-card">
           {makeYourDreamCard.map((data, index) => (
             <div key={index} className={`card card${index}`}>
@@ -66,5 +66,4 @@ const CardSection = () => {
     </section>
   );
 };
-
-export default CardSection;
+export default EmployCard;
