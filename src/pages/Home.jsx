@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/header/Header";
 import Hero from "../components/hero/Hero";
-import Feature from "../components/feature/Feature";
+// import Feature from "../components/feature/Feature";
 import CardSection from "../components/cardsection/CardSection";
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
     <div>
       <Header />
       <Hero />
-      <Feature />
+      {/* <Feature /> */}
       <CardSection />
     </div>
   );
