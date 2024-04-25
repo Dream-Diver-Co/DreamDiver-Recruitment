@@ -41,6 +41,7 @@
 }
 
 #About-Us .single__top > h3 {
+  color: var(--green-primary);
   margin-left: 15px;
   font-size: 23px;
   font-weight: 700;

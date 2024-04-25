@@ -7,6 +7,7 @@ import EmployCard from "../components/employcard/EmployCard";
 import Footer from "../components/footer/Footer";
 import JobCategory from "../components/jobCategory/JobCategory";
 import AboutUs from "../components/aboutUs/AboutUs";
+import Services from "../components/service/Services";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Hero />
       {/* <Feature /> */}
       <CardSection />
+      <Services />
       <AboutUs />
       <EmployCard />
       <JobCategory />

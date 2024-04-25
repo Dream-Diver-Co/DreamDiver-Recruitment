@@ -1,0 +1,16 @@
+.category {
+  justify-content: center;
+}
+
+.category__heading > h3 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.category__icons {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+  margin-left: 50px;
+}
