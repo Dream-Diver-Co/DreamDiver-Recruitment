@@ -42,7 +42,7 @@ const Nav = () => {
           style={{
             left: popoverLeft || 0,
           }}
-          className="position-absolute SiteMenu SiteHeader__menu"
+          className="SiteMenu SiteHeader__menu"
         >
           {hovering === 0 ? <Manu0 /> : hovering === 1 ? <Manu1 /> : null}
         </div>
