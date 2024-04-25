@@ -4,6 +4,7 @@ import Hero from "../components/hero/Hero";
 // import Feature from "../components/feature/Feature";
 import CardSection from "../components/cardsection/CardSection";
 import EmployCard from "../components/employcard/EmployCard";
+import Footer from "../components/footer/Footer";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       {/* <Feature /> */}
       <CardSection />
       <EmployCard />
+      <Footer />
     </div>
   );
 };
