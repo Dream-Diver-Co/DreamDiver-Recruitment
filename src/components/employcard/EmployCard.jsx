@@ -35,7 +35,7 @@ const EmployCard = () => {
     },
   ];
   return (
-    <section className="my-5" id="employ">
+    <section id="employ">
       <div className="container">
         <h1 style={{ color: "#005025" }}>Find Your perfect Employ</h1>
         <div className="grid-card">
