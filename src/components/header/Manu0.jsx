@@ -4,37 +4,55 @@ const Manu0 = () => {
   return (
     <div className="card">
       <div className="j bg-white ">
-        <div className="">
-          <div className="">
+        <div className="row">
+          <div className="col-md-4">
+            <div className="d-flex">
+              <img
+                alt=""
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/59ce87eee0559487e3664bd9ed3c2ccceeb94b09d7e65482a3aab6ba93d5cef3?apiKey=c99fc9926eb64a38b9282bc6d1dcfb9b&"
+                className="shrink-0 my-auto w-7 aspect-square"
+              />
+              <div className="">
+                <p className="m-0">Payments </p>
+                <p className="m-0">Online payments</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className="d-flex gap-4 mt-5">
+              <img
+                alt=""
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/59ce87eee0559487e3664bd9ed3c2ccceeb94b09d7e65482a3aab6ba93d5cef3?apiKey=c99fc9926eb64a38b9282bc6d1dcfb9b&"
+                className="shrink-0 my-auto w-7 aspect-square"
+              />
+              <div className="d-flex flex-col ">
+                <div className="text-sm font-medium leading-5">Payments </div>
+                <div className="text-sm font-light leading-5">
+                  Online payments
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className="d-flex gap-4 mt-5">
+              <img
+                alt=""
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/5357bf6f0352d2e42b9fb41f164d77a1694e6df14b0c3ebf5b58eacc8868defa?apiKey=c99fc9926eb64a38b9282bc6d1dcfb9b&"
+                className="shrink-0 my-auto w-7 aspect-square"
+              />
+              <div className="flex flex-col pr-2.5">
+                <div className="text-sm font-medium leading-5">Checkout </div>
+                <div className="text-sm font-light leading-5">
+                  Prebuilt payment form
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <div className="">
             <div className=" text-sky-950 max-md:mt-10">
-              <div className="d-flex gap-4 mt-5">
-                <img
-                  alt=""
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/59ce87eee0559487e3664bd9ed3c2ccceeb94b09d7e65482a3aab6ba93d5cef3?apiKey=c99fc9926eb64a38b9282bc6d1dcfb9b&"
-                  className="shrink-0 my-auto w-7 aspect-square"
-                />
-                <div className="d-flex flex-col pr-2.5">
-                  <div className="text-sm font-medium leading-5">Payments </div>
-                  <div className="text-sm font-light leading-5">
-                    Online payments
-                  </div>
-                </div>
-              </div>
-              <div className="d-flex gap-4 mt-5">
-                <img
-                  alt=""
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/5357bf6f0352d2e42b9fb41f164d77a1694e6df14b0c3ebf5b58eacc8868defa?apiKey=c99fc9926eb64a38b9282bc6d1dcfb9b&"
-                  className="shrink-0 my-auto w-7 aspect-square"
-                />
-                <div className="flex flex-col pr-2.5">
-                  <div className="text-sm font-medium leading-5">Checkout </div>
-                  <div className="text-sm font-light leading-5">
-                    Prebuilt payment form
-                  </div>
-                </div>
-              </div>
               <div className="d-flex gap-4 mt-5">
                 <img
                   alt=""
@@ -94,8 +112,8 @@ const Manu0 = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="d-flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+          </div> */}
+          {/* <div className="d-flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
             <div className="flex flex-col grow self-stretch tracking-wide text-sky-950 max-md:mt-10">
               <div className="d-flex gap-4">
                 <img
@@ -186,7 +204,7 @@ const Manu0 = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
