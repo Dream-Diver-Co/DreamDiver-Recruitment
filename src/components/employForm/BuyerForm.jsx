@@ -1,13 +1,13 @@
 import React from "react";
 import "./form.css";
-const EmployForm = () => {
+const BuyerForm = () => {
   return (
     <div className="container px-1 py-5 mx-auto">
       <div className="row justify-content-center">
         <div className="col-xl-4 col-lg-8 col-md-9 col-11 text-center">
-          <h3>Find Your Perfect Employ</h3>
+          <h3>Find Your Dream job</h3>
           <p className="blue-text">
-            find a talented Employ happy to work
+            find a suitable job
             <br /> bast on your skills and experience
           </p>
           <div className="card p-2">
@@ -163,4 +163,4 @@ const EmployForm = () => {
   );
 };
 
-export default EmployForm;
+export default BuyerForm;
