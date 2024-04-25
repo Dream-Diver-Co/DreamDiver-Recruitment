@@ -27,8 +27,8 @@ const Nav = () => {
         </Link>
       </li>
       <li className="nav-item">
-        <a
-          href="/"
+        <Link
+          to="/buyer"
           onMouseEnter={(event) => {
             setHovering(1);
             setPopoverLeft(event.currentTarget.offsetLeft);
@@ -36,7 +36,7 @@ const Nav = () => {
           className="nav-link"
         >
           Find Your Perfect employ
-        </a>
+        </Link>
       </li>
       {typeof hovering === "number" && (
         <div
