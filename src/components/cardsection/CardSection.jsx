@@ -1,6 +1,10 @@
 import React from "react";
 import "./cardSection.css";
-import card1 from "../../assets/images/1817900-medicare.jpg";
+import card1 from "../../assets/images/Jobs/1.png";
+import card2 from "../../assets/images/Jobs/2.png";
+import card3 from "../../assets/images/Jobs/3.png";
+import card4 from "../../assets/images/Jobs/4.png";
+import card5 from "../../assets/images/Jobs/5.png";
 const CardSection = () => {
   const makeYourDreamCard = [
     {
@@ -12,25 +16,25 @@ const CardSection = () => {
     {
       title: "AI generated art.",
       price: "$200 USD in 7 days",
-      image: card1,
+      image: card2,
       link: "/",
     },
     {
       title: "AI generated art.",
       price: "$200 USD in 7 days",
-      image: card1,
+      image: card3,
       link: "/",
     },
     {
       title: "AI generated art.",
       price: "$200 USD in 7 days",
-      image: card1,
+      image: card4,
       link: "/",
     },
     {
       title: "AI generated art.",
       price: "$200 USD in 7 days",
-      image: card1,
+      image: card5,
       link: "/",
     },
   ];
