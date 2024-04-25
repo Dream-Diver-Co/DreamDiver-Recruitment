@@ -41,7 +41,9 @@ const EmployCard = () => {
   return (
     <section id="employ">
       <div className="container">
-        <h1 style={{ color: "#005025" }}>Find Your perfect Employ</h1>
+        <h1 className="py-3" style={{ color: "#005025" }}>
+          Find Your perfect Employ
+        </h1>
         <div className="grid-card">
           {makeYourDreamCard.map((data, index) => (
             <div key={index} className={`card card${index}`}>
