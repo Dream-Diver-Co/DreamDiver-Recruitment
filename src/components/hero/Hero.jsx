@@ -1,18 +1,18 @@
 import React from "react";
-import partner1 from "../../assets/images/partner/partner1.webp";
-import partner2 from "../../assets/images/partner/partner2.webp";
-import partner3 from "../../assets/images/partner/partner3.webp";
+// import partner1 from "../../assets/images/partner/partner1.webp";
+// import partner2 from "../../assets/images/partner/partner2.webp";
+// import partner3 from "../../assets/images/partner/partner3.webp";
 import bannerVideo from "../../assets/images/heroBaner/Recruitment_Hero.mp4";
 import "./hero.css";
 const Hero = () => {
   return (
-    <div className="hero-banner-three position-relative md-pt-80 xs-pt-40 pb-80 lg-pb-20">
+    <div className="">
       <div className="video">
         <video autoPlay muted loop id="myVideo">
           <source src={bannerVideo} type="video/mp4" />
         </video>
       </div>
-      <div className="content">
+      {/* <div className="content">
         <div className="container">
           <div className="position-relative">
             <div className="row">
@@ -80,7 +80,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
