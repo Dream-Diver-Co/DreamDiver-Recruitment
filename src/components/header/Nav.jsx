@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import Manu0 from "./Manu0";
 import Manu1 from "./Manu1.jsx";
 import "./nav.css";
+import { Link } from "react-router-dom";
 const Nav = () => {
   const [hovering, setHovering] = useState(null);
   const [popoverLeft, setPopoverLeft] = useState(null);
@@ -13,9 +14,9 @@ const Nav = () => {
       onMouseLeave={() => setHovering(null)}
     >
       <li className="nav-item">
-        <a
+        <Link
           className="nav-link active"
-          href="/"
+          to="/employ"
           onMouseEnter={(event) => {
             setHovering(0);
             setPopoverLeft(event.currentTarget.offsetLeft);
@@ -23,7 +24,7 @@ const Nav = () => {
           aria-current="page"
         >
           Find Your Dream jobs
-        </a>
+        </Link>
       </li>
       <li className="nav-item">
         <a
