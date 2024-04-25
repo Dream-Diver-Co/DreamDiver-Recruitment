@@ -76,18 +76,26 @@ const Footer = () => {
         </div>
       </div>
       <hr />
-      <div className="footer__bottom">
-        <h6>
-          47,595,510 <br /> Registered Users
-        </h6>
-        <h6>
-          18,611,020 <br /> Total Jobs Posted
-        </h6>
-        <p>
-          Freelancer ® is a registered Trademark of Freelancer Technology Pty
-          pmited (ACN 141 959 042) <br />
-          Copyright © 2020 Freelancer Technology Pty pmited (ACN 141 959 042)
-        </p>
+      <div id="dream-diver" className="bg-dark w-100 text-white py-2">
+        <div className="container">
+          <p className="text-end mb-0">
+            Developed
+            <a
+              href="https://www.linkedin.com/in/sakib6619/"
+              className="text-light"
+            >
+              {" "}
+              by
+            </a>{" "}
+            <a
+              href="https://dreamdiver.nl/"
+              rel="noreferrer"
+              className="text-dreamDiver"
+            >
+              DREAM DIVER
+            </a>
+          </p>
+        </div>
       </div>
     </div>
   );
