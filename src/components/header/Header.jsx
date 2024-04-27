@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import Nav from "./Nav";
 import logo from "../../assets/images/logo/logo.webp";
 import "./header.css";
 import { Link } from "react-router-dom";
 const Header = () => {
+  const [navbar, setNavbar] = useState(false);
+  const changeNavBg = () => {
+    if (window.scrollY >= 100) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+  window.addEventListener("scroll", changeNavBg);
   return (
-    <nav className="navbar navbar-expand-lg">
+    <nav
+      className={
+        navbar ? "navbar active-bg navbar-expand-lg" : "navbar navbar-expand-lg"
+      }
+    >
       <div className="container">
         <a className="navbar-brand logo" href="/">
           <img

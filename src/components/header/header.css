@@ -3,6 +3,12 @@ nav.navbar.navbar-expand-lg {
   z-index: 1;
   width: 100%;
 }
+.active-bg {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.5s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 .navbar .container .logo img {
   height: 4rem !important;
   width: 4rem !important;
