@@ -2,6 +2,7 @@ import React from "react";
 import Nav from "./Nav";
 import logo from "../../assets/images/logo/logo.webp";
 import "./header.css";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg ">
@@ -39,9 +40,9 @@ const Header = () => {
                 </a>
               </li>
               <li className="d-none d-lg-block ms-4">
-                <a className="btn-five" href="/register">
+                <Link className="btn-five" to="/signup">
                   Register
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
