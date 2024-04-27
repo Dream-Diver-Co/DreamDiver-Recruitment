@@ -28,3 +28,6 @@ button {
   text-decoration: none !important;
   border: none;
 }
+ul li {
+  list-style: none;
+}
