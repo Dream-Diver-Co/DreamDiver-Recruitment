@@ -57,3 +57,9 @@
   font-weight: 400;
   margin-bottom: 10px;
 }
+
+@media only screen and (max-width: 768px) {
+  .content__single {
+    display: block !important;
+  }
+}

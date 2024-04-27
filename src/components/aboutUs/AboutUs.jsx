@@ -37,7 +37,7 @@ const AboutUs = () => {
             </div>
             <div className="content__single">
               {AboutUs.map((data, index) => (
-                <div className="single">
+                <div key={index} className="single">
                   <div className="single__top">
                     <img src={data.src} alt="single" />
                     <h3>{data.title}</h3>
