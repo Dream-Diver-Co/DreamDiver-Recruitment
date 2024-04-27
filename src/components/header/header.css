@@ -1,3 +1,8 @@
+nav.navbar.navbar-expand-lg {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
 .navbar .container .logo img {
   height: 4rem !important;
   width: 4rem !important;
