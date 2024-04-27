@@ -11,7 +11,7 @@ nav.navbar.navbar-expand-lg {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .navbar .container .logo img {
-  height: 4rem !important;
+  /* height: 4rem !important; */
   width: 4rem !important;
 }
 .style-none {
@@ -25,4 +25,12 @@ nav.navbar.navbar-expand-lg {
 
 .login-btn-two:hover {
   text-decoration: underline !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar .container .logo {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
 }

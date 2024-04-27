@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Nav from "./Nav";
-import logo from "../../assets/images/logo/logo.webp";
+import logo from "../../assets/images/logo/logo12.png";
 import "./header.css";
 import { Link } from "react-router-dom";
 const Header = () => {
@@ -55,7 +55,7 @@ const Header = () => {
                   Login
                 </a>
               </li>
-              <li className="d-none d-lg-block ms-4">
+              <li className=" d-lg-block ms-4">
                 <Link className="btn-five" to="/signup">
                   Register
                 </Link>
