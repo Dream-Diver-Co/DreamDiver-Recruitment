@@ -10,7 +10,7 @@ const Nav = () => {
   // const [popoverHeight, setPopoverHeight] = useState(null);
   return (
     <ul
-      className="navbar-nav m-auto mb-2 mb-lg-0"
+      className="navbar-nav  mb-2 mb-lg-0"
       onMouseLeave={() => setHovering(null)}
     >
       <li className="nav-item">

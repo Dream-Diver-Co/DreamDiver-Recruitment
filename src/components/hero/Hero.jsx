@@ -6,7 +6,7 @@ import bannerVideo from "../../assets/images/heroBaner/Recruitment_Hero.mp4";
 import "./hero.css";
 const Hero = () => {
   return (
-    <div className="">
+    <div className=" hero ">
       <div className="video">
         <video autoPlay muted loop id="myVideo">
           <source src={bannerVideo} type="video/mp4" />
