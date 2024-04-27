@@ -1,161 +1,227 @@
 import React from "react";
+import logo from "../../assets/images/logo/logo.webp";
 import "./form.css";
+import { Link } from "react-router-dom";
 const EmployForm = () => {
   return (
-    <div className="container px-1 py-5 mx-auto">
-      <div className="row justify-content-center">
-        <div className="col-xl-4 col-lg-8 col-md-9 col-11 text-center">
-          <h3>Find Your Perfect Employ</h3>
-          <p className="blue-text">
-            find a talented Employ happy to work
-            <br /> bast on your skills and experience
-          </p>
-          <div className="card p-2">
-            <h5 className="text-center mb-4">Provide your information</h5>
-            <form className="form-card">
-              <div className="row justify-content-between text-left">
-                <div className="form-group col-sm-6 flex-column d-flex">
-                  {" "}
-                  <label className="form-control-label px-3">
-                    Full name<span className="text-danger"> *</span>
-                  </label>
+    <div className="container register">
+      <div className="row">
+        <div className="col-md-3 register-left">
+          <img src={logo} alt="" />
+          <h3>Welcome</h3>
+          <p>You are 30 seconds away from earning your own money!</p>
+          <Link className="btn-five" to="/login" value="Login">
+            Login
+          </Link>
+          <br />
+        </div>
+        <div className="col-md-9 register-right">
+          <ul className="nav nav-tabs nav-justified" id="myTab" role="tablist">
+            <li className="nav-item">
+              <a
+                className="nav-link active"
+                id="home-tab"
+                data-toggle="tab"
+                href="#home"
+                role="tab"
+                aria-controls="home"
+                aria-selected="true"
+              >
+                Employee
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                id="profile-tab"
+                data-toggle="tab"
+                href="#profile"
+                role="tab"
+                aria-controls="profile"
+                aria-selected="false"
+              >
+                Buyer
+              </a>
+            </li>
+          </ul>
+          <div className="tab-content" id="myTabContent">
+            <div
+              className="tab-pane fade show active"
+              id="home"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              <h3 style={{ color: "#005025" }} className="register-heading">
+                Apply as a Employee
+              </h3>
+              <div className="row register-form">
+                <div className="col-md-6">
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Full-Name *"
+                      value=""
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Address  *"
+                      value=""
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="password"
+                      className="form-control"
+                      placeholder="Password *"
+                      value=""
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="password"
+                      className="form-control"
+                      placeholder="Confirm Password *"
+                      value=""
+                    />
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="form-group">
+                    <input
+                      type="email"
+                      className="form-control"
+                      placeholder="Your Email *"
+                      value=""
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      minlength="10"
+                      maxlength="10"
+                      name="txtEmpPhone"
+                      className="form-control"
+                      placeholder="Your Phone *"
+                      value=""
+                    />
+                  </div>
+                  <div className="form-group">
+                    <select className="form-control">
+                      <option className="hidden" selected disabled>
+                        Please select your Sequrity Question
+                      </option>
+                      <option>What is your Birthdate?</option>
+                      <option>What is Your old Phone Number</option>
+                      <option>What is your Pet Name?</option>
+                    </select>
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Enter Your Answer *"
+                      value=""
+                    />
+                  </div>
                   <input
-                    type="text"
-                    id="fname"
-                    name="fname"
-                    placeholder="Enter your first name"
+                    type="submit"
+                    className="btnRegister btn-five"
+                    value="Submit now"
                   />
                 </div>
               </div>
-              <div className="row justify-content-between text-left">
-                <div className="form-group col-sm-2 flex-column d-flex">
-                  {" "}
-                  <label className="form-control-label px-3">
-                    Email<span className="text-danger"> *</span>
-                  </label>{" "}
-                  <input
-                    type="text"
-                    id="email"
-                    name="email"
-                    placeholder=""
-                    onblur="validate(3)"
-                  />{" "}
+            </div>
+            <div
+              className="tab-pane fade show"
+              id="profile"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+            >
+              <h3 className="register-heading">Apply as a Hirer</h3>
+              <div className="row register-form">
+                <div className="col-md-6">
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="First Name *"
+                      value=""
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Last Name *"
+                      value=""
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="email"
+                      className="form-control"
+                      placeholder="Email *"
+                      value=""
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      maxlength="10"
+                      minlength="10"
+                      className="form-control"
+                      placeholder="Phone *"
+                      value=""
+                    />
+                  </div>
                 </div>
-                <div className="form-group col-sm-6 flex-column d-flex">
-                  {" "}
-                  <label className="form-control-label px-3">
-                    Address<span className="text-danger"> *</span>
-                  </label>{" "}
+                <div className="col-md-6">
+                  <div className="form-group">
+                    <input
+                      type="password"
+                      className="form-control"
+                      placeholder="Password *"
+                      value=""
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="password"
+                      className="form-control"
+                      placeholder="Confirm Password *"
+                      value=""
+                    />
+                  </div>
+                  <div className="form-group">
+                    <select className="form-control">
+                      <option className="hidden" selected disabled>
+                        Please select your Sequrity Question
+                      </option>
+                      <option>What is your Birthdate?</option>
+                      <option>What is Your old Phone Number</option>
+                      <option>What is your Pet Name?</option>
+                    </select>
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="`Answer *"
+                      value=""
+                    />
+                  </div>
                   <input
-                    type="text"
-                    id="lname"
-                    name="lname"
-                    placeholder="Enter your last name"
-                    onblur="validate(2)"
-                  />{" "}
-                </div>
-                <div className="form-group col-sm-6 flex-column d-flex">
-                  {" "}
-                  <label className="form-control-label px-3">
-                    Phone number<span className="text-danger"> *</span>
-                  </label>{" "}
-                  <input
-                    type="text"
-                    id="mob"
-                    name="mob"
-                    placeholder=""
-                    onblur="validate(4)"
-                  />{" "}
+                    className="btnRegister btn-five"
+                    type="submit"
+                    value="Submit Now"
+                  />
                 </div>
               </div>
-              <div className="row justify-content-between text-left">
-                <div className="form-group col-sm-6 flex-column d-flex">
-                  {" "}
-                  <label className="form-control-label px-3">
-                    Job title<span className="text-danger"> *</span>
-                  </label>{" "}
-                  <input
-                    type="text"
-                    id="job"
-                    name="job"
-                    placeholder=""
-                    onblur="validate(5)"
-                  />{" "}
-                </div>
-              </div>
-              <div className="row justify-content-between text-left">
-                <div className="form-group col-12 flex-column d-flex">
-                  {" "}
-                  <label className="form-control-label px-3">
-                    Job positions
-                    <span className="text-danger"> *</span>
-                  </label>{" "}
-                  <input
-                    type="text"
-                    id="ans"
-                    name="ans"
-                    placeholder=""
-                    onblur="validate(6)"
-                  />{" "}
-                </div>
-                <div className="form-group col-12 flex-column d-flex">
-                  {" "}
-                  <label className="form-control-label px-3">
-                    salary expectation
-                    <span className="text-danger"> *</span>
-                  </label>{" "}
-                  <input
-                    type="text"
-                    id="ans"
-                    name="ans"
-                    placeholder=""
-                    onblur="validate(6)"
-                  />{" "}
-                </div>
-                <div className="form-group col-12 flex-column d-flex">
-                  {" "}
-                  <label className="form-control-label px-3">
-                    Skills
-                    <span className="text-danger"> *</span>
-                  </label>{" "}
-                  <input
-                    type="text"
-                    id="ans"
-                    name="ans"
-                    placeholder=""
-                    onblur="validate(6)"
-                  />{" "}
-                </div>
-                <div className="form-group col-12 flex-column d-flex">
-                  <label class="form-label" for="customFile">
-                    upload resume
-                  </label>
-                  <input type="file" class="form-control" id="customFile" />
-                </div>
-                <div className="form-group col-12 flex-column d-flex">
-                  {" "}
-                  <label className="form-control-label px-3">
-                    Cover latter
-                    <span className="text-danger"> *</span>
-                  </label>{" "}
-                  <input
-                    type="text-area"
-                    id="ans"
-                    name="ans"
-                    placeholder=""
-                    onblur="validate(6)"
-                  />{" "}
-                </div>
-              </div>
-              <div className="row mt-2 justify-content-end">
-                <div className="form-group col-sm-6">
-                  {" "}
-                  <button type="submit" className="btn-five">
-                    Submit now
-                  </button>{" "}
-                </div>
-              </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>

@@ -25,10 +25,13 @@ const Header = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div
+          className="collapse navbar-collapse justify-content-between"
+          id="navbarSupportedContent"
+        >
           <Nav />
-          <div className="right-widget ms-auto ms-xl-5 order-lg-3">
-            <ul className="d-flex align-items-center style-none">
+          <div className="right-widget ms-xl-5 order-lg-3">
+            <ul className="d-flex justify-content-end style-none">
               <li>
                 <a
                   href="/"
