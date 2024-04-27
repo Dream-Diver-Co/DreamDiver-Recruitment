@@ -2,6 +2,7 @@ nav.navbar.navbar-expand-lg {
   position: fixed;
   z-index: 1;
   width: 100%;
+  top: 0;
 }
 .active-bg {
   width: 100%;
