@@ -18,30 +18,14 @@ const EmployForm = () => {
         <div className="col-md-9 register-right">
           <ul className="nav nav-tabs nav-justified" id="myTab" role="tablist">
             <li className="nav-item">
-              <a
-                className="nav-link active"
-                id="home-tab"
-                data-toggle="tab"
-                href="#home"
-                role="tab"
-                aria-controls="home"
-                aria-selected="true"
-              >
+              <Link className="nav-link active" to="/employ">
                 Employee
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a
-                className="nav-link"
-                id="profile-tab"
-                data-toggle="tab"
-                href="#profile"
-                role="tab"
-                aria-controls="profile"
-                aria-selected="false"
-              >
+              <Link className="nav-link" to="/buyer">
                 Buyer
-              </a>
+              </Link>
             </li>
           </ul>
           <div className="tab-content" id="myTabContent">

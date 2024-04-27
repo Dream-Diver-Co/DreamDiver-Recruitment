@@ -5,37 +5,38 @@ import card2 from "../../assets/images/Jobs/2.png";
 import card3 from "../../assets/images/Jobs/3.png";
 import card4 from "../../assets/images/Jobs/4.png";
 import card5 from "../../assets/images/Jobs/5.png";
+import { Link } from "react-router-dom";
 const CardSection = () => {
   const makeYourDreamCard = [
     {
       title: "AI generated art.",
       price: "$200 USD in 7 days",
       image: card1,
-      link: "/",
+      link: "/buyer",
     },
     {
       title: "AI generated art.",
       price: "$200 USD in 7 days",
       image: card2,
-      link: "/",
+      link: "/buyer",
     },
     {
       title: "AI generated art.",
       price: "$200 USD in 7 days",
       image: card3,
-      link: "/",
+      link: "/buyer",
     },
     {
       title: "AI generated art.",
       price: "$200 USD in 7 days",
       image: card4,
-      link: "/",
+      link: "/buyer",
     },
     {
       title: "AI generated art.",
       price: "$200 USD in 7 days",
       image: card5,
-      link: "/",
+      link: "/buyer",
     },
   ];
   return (
@@ -55,13 +56,13 @@ const CardSection = () => {
                     <p>{data.price}</p>
                   </div>
                   <div className="col">
-                    <a
+                    <Link
                       className="btn-five p-2 wow fadeInUp"
                       data-wow-delay="0.6s"
-                      href={data.link}
+                      to={data.link}
                     >
                       Visit more
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

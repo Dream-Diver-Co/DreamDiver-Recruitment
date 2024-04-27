@@ -18,28 +18,12 @@ const BuyerForm = () => {
         <div className="col-md-9 register-right">
           <ul className="nav nav-tabs nav-justified" id="myTab" role="tablist">
             <li className="nav-item">
-              <Link
-                className="nav-link "
-                id="home-tab"
-                data-toggle="tab"
-                to="/buyer"
-                role="tab"
-                aria-controls="home"
-                aria-selected="true"
-              >
+              <Link className="nav-link " to="/employ">
                 Employee
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                className="nav-link active"
-                id="profile-tab"
-                data-toggle="tab"
-                to="/buyer"
-                role="tab"
-                aria-controls="profile"
-                aria-selected="false"
-              >
+              <Link className="nav-link active" to="/buyer">
                 Buyer
               </Link>
             </li>

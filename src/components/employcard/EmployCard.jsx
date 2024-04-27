@@ -5,37 +5,38 @@ import card3 from "../../assets/images/Employee/employee3.png";
 import card4 from "../../assets/images/Employee/employee4.png";
 import card5 from "../../assets/images/Employee/employee5.png";
 import "./empoycard.css";
+import { Link } from "react-router-dom";
 const EmployCard = () => {
   const makeYourDreamCard = [
     {
       title: "Hire Our Chef",
       price: "Negociable",
       image: card1,
-      link: "https://foody-moody-restaurant.web.app/shef",
+      link: "/employ",
     },
     {
       title: "Web Designer",
       price: "$200 USD in 7 days",
       image: card2,
-      link: "https://dreamdiver.nl/web_design",
+      link: "/employ",
     },
     {
       title: "AI generated art.",
       price: "$200 USD in 7 days",
       image: card3,
-      link: "/",
+      link: "employ",
     },
     {
       title: "AI generated art.",
       price: "$200 USD in 7 days",
       image: card4,
-      link: "/",
+      link: "employ",
     },
     {
       title: "AI generated art.",
       price: "$200 USD in 7 days",
       image: card5,
-      link: "/",
+      link: "/employ",
     },
   ];
   return (
@@ -55,13 +56,13 @@ const EmployCard = () => {
                     <p>{data.price}</p>
                   </div>
                   <div className="col">
-                    <a
+                    <Link
                       className="btn-five p-2 wow fadeInUp"
                       data-wow-delay="0.6s"
-                      href={data.link}
+                      to={data.link}
                     >
                       Visit more
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
