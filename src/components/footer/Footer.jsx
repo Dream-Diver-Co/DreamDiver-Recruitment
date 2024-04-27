@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css";
-import logo from "../../assets/images/logo/logo.webp";
+import logo from "../../assets/images/logo/logo12.png";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { IoIosHelpCircleOutline } from "react-icons/io";
