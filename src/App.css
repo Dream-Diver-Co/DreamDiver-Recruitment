@@ -20,7 +20,9 @@ span {
   font-family: Oswald;
   font-optical-sizing: auto;
 }
-
+p {
+  color: white;
+}
 a,
 button {
   font-family: sans-serif;

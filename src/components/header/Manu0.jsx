@@ -6,7 +6,7 @@ import { GrTechnology } from "react-icons/gr";
 const Manu0 = () => {
   return (
     <div className="card">
-      <div className=" bg-white ">
+      <div className=" bg-dark ">
         <div className="row">
           <div className="mega-menu-bg col-md-4">
             <ul>
