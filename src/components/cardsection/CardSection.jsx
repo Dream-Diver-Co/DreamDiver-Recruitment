@@ -42,9 +42,7 @@ const CardSection = () => {
   return (
     <section id="buyer">
       <div className="container">
-        <h1 className="py-3" style={{ color: "#005025" }}>
-          Make your dreams a reality
-        </h1>
+        <h1 className="py-3">Make your dreams a reality</h1>
         <div className="grid-card">
           {makeYourDreamCard.map((data, index) => (
             <div key={index} className={`card card${index}`}>

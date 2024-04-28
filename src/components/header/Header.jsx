@@ -23,7 +23,7 @@ const Header = () => {
         <a className="navbar-brand logo" href="/">
           <img
             src={logo}
-            className="img-fluid"
+            className="img-fluid logo-img"
             alt="dream diver recruitment logo"
           />
         </a>
