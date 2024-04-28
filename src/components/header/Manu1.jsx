@@ -6,7 +6,7 @@ import { LiaAccessibleIcon } from "react-icons/lia";
 const manu1 = () => {
   return (
     <div className="card">
-      <div className=" bg-white ">
+      <div className=" bg-dark ">
         <div className="row">
           <div className="mega-menu-bg col-md-4">
             <ul>

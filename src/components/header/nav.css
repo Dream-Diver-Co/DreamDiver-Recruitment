@@ -1,5 +1,5 @@
 .nav-link {
-  color: var(--dark-primary);
+  color: #ffffff !important;
 }
 .navbar-nav .nav-item .active {
   color: var(--green-primary) !important;
