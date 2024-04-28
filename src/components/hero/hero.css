@@ -4,7 +4,9 @@
 .hero-banner-three {
   z-index: 5;
 }
-
+.hero .video .img.img-fluid {
+  width: 100%;
+}
 .hero-banner-three .slogan {
   color: #5ea17e;
 }

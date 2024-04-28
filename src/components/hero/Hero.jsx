@@ -2,15 +2,17 @@ import React from "react";
 // import partner1 from "../../assets/images/partner/partner1.webp";
 // import partner2 from "../../assets/images/partner/partner2.webp";
 // import partner3 from "../../assets/images/partner/partner3.webp";
-import bannerVideo from "../../assets/images/heroBaner/Recruitment_Hero.mp4";
+// import bannerVideo from "../../assets/images/heroBaner/Recruitment_Hero.mp4";
+import logo from "../../assets/images/logo/FindJob.webp";
 import "./hero.css";
 const Hero = () => {
   return (
     <div className=" hero ">
       <div className="video">
-        <video autoPlay muted loop id="myVideo">
+        {/* <video autoPlay muted loop id="myVideo">
           <source src={bannerVideo} type="video/mp4" />
-        </video>
+        </video> */}
+        <img src={logo} className="img-fluid" alt="" />
       </div>
       {/* <div className="content">
         <div className="container">
