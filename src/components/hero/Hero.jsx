@@ -3,17 +3,80 @@ import React from "react";
 // import partner2 from "../../assets/images/partner/partner2.webp";
 // import partner3 from "../../assets/images/partner/partner3.webp";
 // import bannerVideo from "../../assets/images/heroBaner/Recruitment_Hero.mp4";
-import logo from "../../assets/images/logo/FindJob.webp";
+import logo1 from "../../assets/images/logo/FindJob.webp";
+import logo2 from "../../assets/images/logo/FindEmployee.webp";
+import logo3 from "../../assets/images/logo/Welcome.webp";
 import "./hero.css";
 const Hero = () => {
   return (
     <div className=" hero ">
-      <div className="video">
-        {/* <video autoPlay muted loop id="myVideo">
+      <div id="carouselExampleIndicators" className="carousel slide">
+        <div className="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            className="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img src={logo1} className="d-block w-100" alt="..." />
+          </div>
+          <div className="carousel-item">
+            <img src={logo2} className="d-block w-100" alt="..." />
+          </div>
+          <div className="carousel-item">
+            <img src={logo3} className="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          className="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button
+          className="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      {/* bootstrap cresol end */}
+      {/* <div className="video"> */}
+      {/* <video autoPlay muted loop id="myVideo">
           <source src={bannerVideo} type="video/mp4" />
         </video> */}
-        <img src={logo} className="img-fluid" alt="" />
-      </div>
+      {/* <img src={logo} className="img-fluid" alt="" /> */}
+      {/* </div> */}
       {/* <div className="content">
         <div className="container">
           <div className="position-relative">

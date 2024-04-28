@@ -4,7 +4,7 @@
 .hero-banner-three {
   z-index: 5;
 }
-.hero .video .img.img-fluid {
+.hero .video img {
   width: 100%;
 }
 .hero-banner-three .slogan {
