@@ -6,9 +6,7 @@ const JobCategory = () => {
   return (
     <div className="jobCategory">
       <div className="jobCategory__heading">
-        <h1 className="py-3" style={{ color: "#005025" }}>
-          Browse top job categories
-        </h1>
+        <h1 className="py-3">Browse top job categories</h1>
       </div>
       <div className="jobCategory__icons">
         <Jobs title="PHP" />

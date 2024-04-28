@@ -8,9 +8,7 @@ const Services = () => {
         <div className="row">
           <div className="category">
             <div className="category__heading">
-              <h1 className="py-3" style={{ color: "#005025" }}>
-                Get work different categories
-              </h1>
+              <h1 className="py-3">Get work different categories</h1>
             </div>
             <div className="category__icons">
               <Icons

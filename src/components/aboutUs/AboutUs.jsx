@@ -33,7 +33,7 @@ const AboutUs = () => {
         <div className="row">
           <div className="about-content">
             <div className="content__heading">
-              <h1 style={{ color: "#005025" }}>What's great about it?</h1>
+              <h1>What's great about it?</h1>
             </div>
             <div className="content__single">
               {AboutUs.map((data, index) => (

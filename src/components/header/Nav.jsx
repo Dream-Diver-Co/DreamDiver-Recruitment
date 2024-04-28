@@ -15,7 +15,7 @@ const Nav = () => {
     >
       <li className="nav-item">
         <Link
-          className="nav-link active"
+          className="nav-link "
           to="/employ"
           onMouseEnter={(event) => {
             setHovering(0);
