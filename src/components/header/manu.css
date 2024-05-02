@@ -8,3 +8,16 @@
 .mega-menu-bg {
   background-color: rgba(198, 198, 198, 0.742);
 }
+.mega-menu-active {
+  color: var(--green-primary) !important;
+}
+.mega-menu-bg a:hover {
+  color: var(--green-primary) !important;
+}
+
+.mega-hidden {
+  display: none;
+}
+.mega-show {
+  display: block;
+}
