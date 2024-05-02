@@ -48,9 +48,7 @@ const Nav = () => {
           Pricing
         </a>
         {typeof hovering === "number" && (
-          <div className="absolute shadow bg-white p-5 rounded w-[600px] overflow-hidden transform-gpu shadow-lg transition-all duration-300">
-            {/* Our popover */}
-          </div>
+          <div className="absolute  bg-white ">{/* Our popover */}</div>
         )}
       </div>
     </nav>
