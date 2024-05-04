@@ -44,7 +44,7 @@ const BuyerForm = () => {
                     <input
                       type="text"
                       className="form-control"
-                      placeholder="Full-Name *"
+                      placeholder="Recruiter's Name *"
                       value=""
                     />
                   </div>
@@ -52,23 +52,47 @@ const BuyerForm = () => {
                     <input
                       type="text"
                       className="form-control"
-                      placeholder="Address  *"
+                      placeholder="Company Name  *"
                       value=""
                     />
                   </div>
                   <div className="form-group">
                     <input
-                      type="password"
+                      type="text"
                       className="form-control"
-                      placeholder="Password *"
+                      placeholder="Job Title/Possition *"
                       value=""
                     />
                   </div>
                   <div className="form-group">
                     <input
-                      type="password"
+                      type="text"
                       className="form-control"
-                      placeholder="Confirm Password *"
+                      placeholder="Job Description *"
+                      value=""
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Location *"
+                      value=""
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Join Date *"
+                      value=""
+                    />
+                  </div>
+                  <div className="form-group ">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Salary Range *"
                       value=""
                     />
                   </div>
@@ -78,7 +102,7 @@ const BuyerForm = () => {
                     <input
                       type="email"
                       className="form-control"
-                      placeholder="Your Email *"
+                      placeholder="Recruiter's Email *"
                       value=""
                     />
                   </div>
@@ -89,50 +113,7 @@ const BuyerForm = () => {
                       maxlength="10"
                       name="txtEmpPhone"
                       className="form-control"
-                      placeholder="Your Phone *"
-                      value=""
-                    />
-                  </div>
-                  <div className="form-group">
-                    <select className="form-control">
-                      <option className="hidden" selected disabled>
-                        Please select your Sequrity Question
-                      </option>
-                      <option>What is your Birthdate?</option>
-                      <option>What is Your old Phone Number</option>
-                      <option>What is your Pet Name?</option>
-                    </select>
-                  </div>
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Enter Your Answer *"
-                      value=""
-                    />
-                  </div>
-                  <input
-                    type="submit"
-                    className="btnRegister btn-five"
-                    value="Submit now"
-                  />
-                </div>
-              </div>
-            </div>
-            <div
-              className="tab-pane fade show"
-              id="profile"
-              role="tabpanel"
-              aria-labelledby="profile-tab"
-            >
-              <h3 className="register-heading">Apply as a Hirer</h3>
-              <div className="row register-form">
-                <div className="col-md-6">
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="First Name *"
+                      placeholder="Educational Requirement *"
                       value=""
                     />
                   </div>
@@ -140,70 +121,47 @@ const BuyerForm = () => {
                     <input
                       type="text"
                       className="form-control"
-                      placeholder="Last Name *"
-                      value=""
+                      placeholder="Skills / Qualifications*"
                     />
                   </div>
                   <div className="form-group">
                     <input
-                      type="email"
+                      type="text"
                       className="form-control"
-                      placeholder="Email *"
+                      placeholder="Applications deadline *"
                       value=""
                     />
                   </div>
                   <div className="form-group">
                     <input
                       type="text"
-                      maxlength="10"
-                      minlength="10"
                       className="form-control"
-                      placeholder="Phone *"
+                      placeholder="Recruitment Process *"
+                      value=""
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Contact Information *"
+                      value=""
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Company Culture/Value *"
                       value=""
                     />
                   </div>
                 </div>
-                <div className="col-md-6">
-                  <div className="form-group">
-                    <input
-                      type="password"
-                      className="form-control"
-                      placeholder="Password *"
-                      value=""
-                    />
-                  </div>
-                  <div className="form-group">
-                    <input
-                      type="password"
-                      className="form-control"
-                      placeholder="Confirm Password *"
-                      value=""
-                    />
-                  </div>
-                  <div className="form-group">
-                    <select className="form-control">
-                      <option className="hidden" selected disabled>
-                        Please select your Sequrity Question
-                      </option>
-                      <option>What is your Birthdate?</option>
-                      <option>What is Your old Phone Number</option>
-                      <option>What is your Pet Name?</option>
-                    </select>
-                  </div>
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="`Answer *"
-                      value=""
-                    />
-                  </div>
-                  <input
-                    className="btnRegister btn-five"
-                    type="submit"
-                    value="Submit Now"
-                  />
-                </div>
+                <input
+                  type="submit"
+                  className="btnRegister m-auto btn-five"
+                  value="Submit now"
+                />
               </div>
             </div>
           </div>

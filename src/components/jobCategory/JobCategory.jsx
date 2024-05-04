@@ -1,7 +1,6 @@
 import React from "react";
 import "./jobCategory.css";
 import Jobs from "../jobs/Jobs";
-
 const JobCategory = () => {
   return (
     <div className="jobCategory">

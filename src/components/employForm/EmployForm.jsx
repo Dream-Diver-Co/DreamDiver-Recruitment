@@ -58,17 +58,41 @@ const EmployForm = () => {
                   </div>
                   <div className="form-group">
                     <input
-                      type="password"
+                      type="text"
                       className="form-control"
-                      placeholder="Password *"
+                      placeholder="Cover later *"
                       value=""
                     />
                   </div>
                   <div className="form-group">
                     <input
-                      type="password"
+                      type="text"
                       className="form-control"
-                      placeholder="Confirm Password *"
+                      placeholder="Education *"
+                      value=""
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Skills *"
+                      value=""
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Join Date *"
+                      value=""
+                    />
+                  </div>
+                  <div className="form-group ">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Portfolio link *"
                       value=""
                     />
                   </div>
@@ -94,45 +118,17 @@ const EmployForm = () => {
                     />
                   </div>
                   <div className="form-group">
-                    <select className="form-control">
-                      <option className="hidden" selected disabled>
-                        Please select your Sequrity Question
-                      </option>
-                      <option>What is your Birthdate?</option>
-                      <option>What is Your old Phone Number</option>
-                      <option>What is your Pet Name?</option>
-                    </select>
-                  </div>
-                  <div className="form-group">
                     <input
-                      type="text"
+                      type="file"
                       className="form-control"
-                      placeholder="Enter Your Answer *"
-                      value=""
+                      placeholder="Upload/Resume *"
                     />
                   </div>
-                  <input
-                    type="submit"
-                    className="btnRegister btn-five"
-                    value="Submit now"
-                  />
-                </div>
-              </div>
-            </div>
-            <div
-              className="tab-pane fade show"
-              id="profile"
-              role="tabpanel"
-              aria-labelledby="profile-tab"
-            >
-              <h3 className="register-heading">Apply as a Hirer</h3>
-              <div className="row register-form">
-                <div className="col-md-6">
                   <div className="form-group">
                     <input
-                      type="text"
+                      type="text-area"
                       className="form-control"
-                      placeholder="First Name *"
+                      placeholder="Possition *"
                       value=""
                     />
                   </div>
@@ -140,70 +136,40 @@ const EmployForm = () => {
                     <input
                       type="text"
                       className="form-control"
-                      placeholder="Last Name *"
-                      value=""
-                    />
-                  </div>
-                  <div className="form-group">
-                    <input
-                      type="email"
-                      className="form-control"
-                      placeholder="Email *"
+                      placeholder="Work Experience *"
                       value=""
                     />
                   </div>
                   <div className="form-group">
                     <input
                       type="text"
-                      maxlength="10"
-                      minlength="10"
                       className="form-control"
-                      placeholder="Phone *"
+                      placeholder="Reference *"
+                      value=""
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Expect Salary *"
+                      value=""
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Additional Comment *"
                       value=""
                     />
                   </div>
                 </div>
-                <div className="col-md-6">
-                  <div className="form-group">
-                    <input
-                      type="password"
-                      className="form-control"
-                      placeholder="Password *"
-                      value=""
-                    />
-                  </div>
-                  <div className="form-group">
-                    <input
-                      type="password"
-                      className="form-control"
-                      placeholder="Confirm Password *"
-                      value=""
-                    />
-                  </div>
-                  <div className="form-group">
-                    <select className="form-control">
-                      <option className="hidden" selected disabled>
-                        Please select your Sequrity Question
-                      </option>
-                      <option>What is your Birthdate?</option>
-                      <option>What is Your old Phone Number</option>
-                      <option>What is your Pet Name?</option>
-                    </select>
-                  </div>
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="`Answer *"
-                      value=""
-                    />
-                  </div>
-                  <input
-                    className="btnRegister btn-five"
-                    type="submit"
-                    value="Submit Now"
-                  />
-                </div>
+                <input
+                  type="submit"
+                  className="btnRegister m-auto btn-five"
+                  value="Submit now"
+                />
               </div>
             </div>
           </div>

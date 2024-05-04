@@ -1,7 +1,127 @@
-import React from "react";
+import React, { useState } from "react";
 import Icons from "./Icons";
 import "./service.css";
+import icon1 from "../../assets/images/category/Product Promotion.svg";
+import icon2 from "../../assets/images/category/it support.png";
+import icon3 from "../../assets/images/category/SalesEmployee.png";
+import icon4 from "../../assets/images/category/food-cook.png";
+import icon5 from "../../assets/images/category/administrative-assistan.png";
+// hard jobs icon
+import icon6 from "../../assets/images/category/waiter.png";
+import icon7 from "../../assets/images/category/warehouse-worker.png";
+// technicalJobs
+import icon8 from "../../assets/images/category/cashierl.png";
+// householdJobs
+import icon9 from "../../assets/images/category/food-cooking-food.png";
 const Services = () => {
+  const softJobs = [
+    {
+      title: "Product Promotion",
+      icon: icon1,
+      link: "/",
+    },
+    {
+      title: "Product IT Support",
+      icon: icon2,
+      link: "/",
+    },
+    {
+      title: "Sales Employee",
+      icon: icon3,
+      link: "/",
+    },
+    {
+      title: "Kitchen porter",
+      icon: icon4,
+      link: "/",
+    },
+    {
+      title: "Administrative assistant",
+      icon: icon5,
+      link: "/",
+    },
+  ];
+  const HardJobs = [
+    {
+      title: "Waiter / waitress",
+      icon: icon6,
+      link: "/",
+    },
+    {
+      title: "All-round warehouse employee",
+      icon: icon7,
+      link: "/",
+    },
+    {
+      title: "All-round store employee",
+      icon: icon7,
+      link: "/",
+    },
+    {
+      title: "Sampling",
+      icon: icon7,
+      link: "/",
+    },
+    {
+      title: "Sampling",
+      icon: icon7,
+      link: "/",
+    },
+  ];
+  const technicalJobs = [
+    {
+      title: "Cashier",
+      icon: icon8,
+      link: "/",
+    },
+    {
+      title: "Order picker",
+      icon: icon8,
+      link: "/",
+    },
+    {
+      title: "IT Support",
+      icon: icon8,
+      link: "/",
+    },
+    {
+      title: "Cashier",
+      icon: icon8,
+      link: "/",
+    },
+    {
+      title: "Sales Employee",
+      icon: icon8,
+      link: "/",
+    },
+  ];
+  const householdJobs = [
+    {
+      title: "Cook",
+      icon: icon9,
+      link: "/",
+    },
+    {
+      title: "Kitchen porter",
+      icon: icon9,
+      link: "/",
+    },
+    {
+      title: "Kitchen Aid",
+      icon: icon9,
+      link: "/",
+    },
+    {
+      title: "Cleaning work",
+      icon: icon9,
+      link: "/",
+    },
+    {
+      title: "Housekeeping",
+      icon: icon9,
+      link: "/",
+    },
+  ];
   return (
     <section id="service">
       <div className="container">
@@ -11,224 +131,24 @@ const Services = () => {
               <h1 className="py-3">Get work different categories</h1>
             </div>
             <div className="category__icons">
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-website-design-v2.svg"
-                title="Website Design"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-pr.svg"
-                title="Public Relations"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-web-scraping.svg"
-                title="Web Scraping"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-wordpress.svg"
-                title="WordPress"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-content-writing.svg"
-                title="Content Writing"
-              />
+              {softJobs.map((data, index) => (
+                <Icons key={index} src={data.icon} title={data.title} />
+              ))}
             </div>
             <div className="category__icons">
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-mobile-apps-v2.svg"
-                title="Mobile Apps"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-logistics-v2.svg"
-                title="Logistics"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-html.svg"
-                title="HTML"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-web-search.svg"
-                title="Web Search"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-marketing.svg"
-                title="Marketing"
-              />
+              {HardJobs.map((data, index) => (
+                <Icons src={data.icon} title={data.title} />
+              ))}
             </div>
             <div className="category__icons">
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-android-v2.svg"
-                title="Android Apps"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-proofreading.svg"
-                title="Proofreading"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-css.svg"
-                title="CSS"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-finance-v2.svg"
-                title="Finance"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-excel.svg"
-                title="Excel"
-              />
+              {technicalJobs.map((data, index) => (
+                <Icons src={data.icon} title={data.title} />
+              ))}
             </div>
             <div className="category__icons">
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-iphone-apps-v2.svg"
-                title="iPhone Apps"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-translation.svg"
-                title="Translation"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-html-5.svg"
-                title="HTML 5"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-legal-v2.svg"
-                title="Legal"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-ghost-writing-v2.svg"
-                title="Ghostwriting"
-              />
-            </div>
-            <div className="category__icons">
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-software-architecture.svg"
-                title="Software Architecture"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-research.svg"
-                title="Research"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-javascript.svg"
-                title="JavaScript"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-linux-v2.svg"
-                title="Linux"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-copy-writing-v2.svg"
-                title="Copywriting"
-              />
-            </div>
-            <div className="category__icons">
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-graphic-design-v2.svg"
-                title="Graphic Design"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-research-writing.svg"
-                title="Research Writing"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-data-processing.svg"
-                title="Data Processing"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-manufacturing-v2.svg"
-                title="Manufacturing"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-accounting-v2.svg"
-                title="Accounting"
-              />
-            </div>
-            <div className="category__icons">
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-logo-design-v2.svg"
-                title="Logo Design"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-article-writing-v2.svg"
-                title="Article Writing"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-python.svg"
-                title="Python"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-aws-v2.svg"
-                title="Amazon Web Services"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-mysql.svg"
-                title="MySQL"
-              />
-            </div>
-            <div className="category__icons">
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-photoshop-v2.svg"
-                title="Photoshop"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-technical-writing-v2.svg"
-                title="Technical Writing"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-csharp.svg"
-                title="C# Programming"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-link-building.svg"
-                title="Link Building"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-cplusplus.svg"
-                title="C++ Programming"
-              />
-            </div>
-            <div className="category__icons">
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-banner-design-v2.svg"
-                title="Banner Design"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-blogging.svg"
-                title="Blogging"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-software-dev-v2.svg"
-                title="Software Development"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-ecommerce.svg"
-                title="eCommerce"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-3d-modelling-v2.svg"
-                title="3D Modelling"
-              />
-            </div>
-            <div className="category__icons">
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-illustration.svg"
-                title="Illustration"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-internet-marketing-v2.svg"
-                title="Internet Marketing"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-php-v2.svg"
-                title="PHP"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-data-entry-v2.svg"
-                title="Data Entry"
-              />
-              <Icons
-                src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/see-all.svg"
-                title="See All"
-              />
+              {householdJobs.map((data, index) => (
+                <Icons src={data.icon} title={data.title} />
+              ))}
             </div>
           </div>
         </div>
