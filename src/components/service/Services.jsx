@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Icons from "./Icons";
 import "./service.css";
 import icon1 from "../../assets/images/category/Product Promotion.svg";
