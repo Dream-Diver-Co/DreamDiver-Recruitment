@@ -46,14 +46,9 @@ const Header = () => {
           <div className="right-widget ms-xl-5 order-lg-3">
             <ul className="d-flex justify-content-end style-none">
               <li>
-                <a
-                  href="/"
-                  className="fw-500 login-btn-two"
-                  data-bs-toggle="modal"
-                  data-bs-target="#loginModal"
-                >
+                <Link to="/signin" className="fw-500 login-btn-two login">
                   Login
-                </a>
+                </Link>
               </li>
               <li className=" d-lg-block ms-4">
                 <Link className="btn-five" to="/signup">
