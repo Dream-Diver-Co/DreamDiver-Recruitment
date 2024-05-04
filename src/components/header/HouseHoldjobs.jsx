@@ -5,7 +5,7 @@ import { GrTechnology } from "react-icons/gr";
 
 const HouseHoldjobs = () => {
   return (
-    <div className="col-md-8 mega-hidden">
+    <div className="col-md-8">
       <div className="row">
         <div className="col-md-6">
           <ul>

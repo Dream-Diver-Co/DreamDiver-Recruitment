@@ -96,8 +96,10 @@ const Footer = () => {
               <p className="text-end mb-0">
                 Developed
                 <a
+                  style={{ cursor: "default" }}
+                  target="blank"
                   href="https://www.linkedin.com/in/sakib6619/"
-                  className="text-light"
+                  className="text-light cursor-none"
                 >
                   {" "}
                   by
@@ -105,6 +107,7 @@ const Footer = () => {
                 <a
                   href="https://dreamdiver.nl/"
                   rel="noreferrer"
+                  target="blank"
                   className="text-dreamDiver"
                 >
                   DREAM DIVER

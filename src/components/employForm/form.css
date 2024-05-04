@@ -97,7 +97,7 @@
 } */
 .register .nav-tabs .nav-link.active {
   width: 100px;
-  color: var(--green-primary);
+  color: var(--dark-primary) !important;
   border: 2px solid var(--green-primary);
   /* border-top-left-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem; */
