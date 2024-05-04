@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import EmployApply from "./pages/apply/EmployApply";
 import BuyerApply from "./pages/apply/BuyerApply";
 import SignUP from "./pages/SignUP";
+import SignInPage from "./pages/SignIn";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/employ" element={<EmployApply />} />
           <Route path="/buyer" element={<BuyerApply />} />
           <Route path="/signup" element={<SignUP />} />
+          <Route path="/signin" element={<SignInPage />} />
         </Routes>
       </BrowserRouter>
     </div>

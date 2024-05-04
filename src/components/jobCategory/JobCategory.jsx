@@ -1,83 +1,151 @@
 import React from "react";
 import "./jobCategory.css";
 import Jobs from "../jobs/Jobs";
+import icon1 from "../../assets/images/category/Product Promotion.svg";
+import icon2 from "../../assets/images/category/it support.png";
+import icon3 from "../../assets/images/category/SalesEmployee.png";
+import icon4 from "../../assets/images/category/food-cook.png";
+import icon5 from "../../assets/images/category/administrative-assistan.png";
+// hard jobs icon
+import icon6 from "../../assets/images/category/waiter.png";
+import icon7 from "../../assets/images/category/warehouse-worker.png";
+// technicalJobs
+import icon8 from "../../assets/images/category/cashierl.png";
+// householdJobs
+import icon9 from "../../assets/images/category/food-cooking-food.png";
 const JobCategory = () => {
+  const softJobs = [
+    {
+      title: "Product Promotion",
+      icon: icon1,
+      link: "/",
+    },
+    {
+      title: "Product IT Support",
+      icon: icon2,
+      link: "/",
+    },
+    {
+      title: "Sales Employee",
+      icon: icon3,
+      link: "/",
+    },
+    {
+      title: "Kitchen porter",
+      icon: icon4,
+      link: "/",
+    },
+    {
+      title: "Administrative assistant",
+      icon: icon5,
+      link: "/",
+    },
+  ];
+  const HardJobs = [
+    {
+      title: "Waiter / waitress",
+      icon: icon6,
+      link: "/",
+    },
+    {
+      title: "All-round warehouse employee",
+      icon: icon7,
+      link: "/",
+    },
+    {
+      title: "All-round store employee",
+      icon: icon7,
+      link: "/",
+    },
+    {
+      title: "Sampling",
+      icon: icon7,
+      link: "/",
+    },
+    {
+      title: "Sampling",
+      icon: icon7,
+      link: "/",
+    },
+  ];
+  const technicalJobs = [
+    {
+      title: "Cashier",
+      icon: icon8,
+      link: "/",
+    },
+    {
+      title: "Order picker",
+      icon: icon8,
+      link: "/",
+    },
+    {
+      title: "IT Support",
+      icon: icon8,
+      link: "/",
+    },
+    {
+      title: "Cashier",
+      icon: icon8,
+      link: "/",
+    },
+    {
+      title: "Sales Employee",
+      icon: icon8,
+      link: "/",
+    },
+  ];
+  const householdJobs = [
+    {
+      title: "Cook",
+      icon: icon9,
+      link: "/",
+    },
+    {
+      title: "Kitchen porter",
+      icon: icon9,
+      link: "/",
+    },
+    {
+      title: "Kitchen Aid",
+      icon: icon9,
+      link: "/",
+    },
+    {
+      title: "Cleaning work",
+      icon: icon9,
+      link: "/",
+    },
+    {
+      title: "Housekeeping",
+      icon: icon9,
+      link: "/",
+    },
+  ];
   return (
     <div className="jobCategory">
       <div className="jobCategory__heading">
         <h1 className="py-3">Browse top job categories</h1>
       </div>
       <div className="jobCategory__icons">
-        <Jobs title="PHP" />
-        <Jobs title="Android" />
-        <Jobs title="Ghostwriting" />
-        <Jobs title="3D Rendering" />
+        {softJobs.map((data, index) => (
+          <Jobs key={index} title={data.title} img={data.icon} />
+        ))}
       </div>
       <div className="jobCategory__icons">
-        <Jobs title="Graphic Design" />
-        <Jobs title="Excel" />
-        <Jobs title="Marketing" />
-        <Jobs title="Linux" />
+        {HardJobs.map((data, index) => (
+          <Jobs key={index} title={data.title} img={data.icon} />
+        ))}
       </div>
       <div className="jobCategory__icons">
-        <Jobs title="Website Design" />
-        <Jobs title="CSS" />
-        <Jobs title="Data Processing" />
-        <Jobs title="Video Services" />
+        {technicalJobs.map((data, index) => (
+          <Jobs key={index} title={data.title} img={data.icon} />
+        ))}
       </div>
       <div className="jobCategory__icons">
-        <Jobs title="HTML" />
-        <Jobs title="HTML5" />
-        <Jobs title="Technical Writing" />
-        <Jobs title="C++ Programming" />
-      </div>
-      <div className="jobCategory__icons">
-        <Jobs title="Logo Design" />
-        <Jobs title="Internet Marketing" />
-        <Jobs title="Python" />
-        <Jobs title="eCommerce" />
-      </div>
-      <div className="jobCategory__icons">
-        <Jobs title="Photoshop" />
-        <Jobs title="Copywriting" />
-        <Jobs title="Social Media Marketing" />
-        <Jobs title="Banner Design" />
-      </div>
-      <div className="jobCategory__icons">
-        <Jobs title="WordPress" />
-        <Jobs title="SEO" />
-        <Jobs title="Research" />
-        <Jobs title="Illustration" />
-      </div>
-      <div className="jobCategory__icons">
-        <Jobs title="Article Writing" />
-        <Jobs title="iPhone" />
-        <Jobs title="Link Building" />
-        <Jobs title="Proofreading" />
-      </div>
-      <div className="jobCategory__icons">
-        <Jobs title="Javascript" />
-        <Jobs title="Research Writing" />
-        <Jobs title="C# Programming" />
-        <Jobs title="3D Animation" />
-      </div>
-      <div className="jobCategory__icons">
-        <Jobs title="Mobile App Development" />
-        <Jobs title="Translation" />
-        <Jobs title="3D Modelling" />
-        <Jobs title="Content Writing" />
-      </div>
-      <div className="jobCategory__icons">
-        <Jobs title="Software Architecture" />
-        <Jobs title="Java" />
-        <Jobs title="Web Search" />
-        <Jobs title="See All" />
-      </div>
-      <div className="jobCategory__icons">
-        <Jobs title="Data Entry" />
-        <Jobs title="MySQL" />
-        <Jobs title="Web Scraping" />
-        <Jobs title="" />
+        {householdJobs.map((data, index) => (
+          <Jobs key={index} title={data.title} img={data.icon} />
+        ))}
       </div>
     </div>
   );

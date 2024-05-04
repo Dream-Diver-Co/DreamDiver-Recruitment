@@ -5,7 +5,7 @@ import { GrTechnology } from "react-icons/gr";
 
 const SoftJobs = () => {
   return (
-    <div className="col-md-8 sub-mega-menu ">
+    <div className="col-md-8 sub-mega-menu">
       <div className="row">
         <div className="col-md-6">
           <ul>

@@ -11,13 +11,15 @@ const SignUp = () => {
             <span class="number">1</span> Your basic info
           </legend>
 
-          <label for="name">Name:</label>
+          <label for="name">User Name:</label>
           <input type="text" id="name" name="user_name" />
 
           <label for="mail">Email:</label>
           <input type="email" id="mail" name="user_email" />
 
           <label for="password">Password:</label>
+          <input type="password" id="password" name="user_password" />
+          <label for="password">confirm Password:</label>
           <input type="password" id="password" name="user_password" />
         </fieldset>
 
