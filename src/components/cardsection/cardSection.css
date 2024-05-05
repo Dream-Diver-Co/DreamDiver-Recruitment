@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   grid-gap: 0.1rem;
-  height: auto;
+  /* height: auto; */
   cursor: pointer;
 }
 
@@ -11,7 +11,7 @@
 }
 
 #buyer .card:hover {
-  transform: scale(1.05); /* Slightly larger scale on hover */
+  transform: scale(1.07); /* Slightly larger scale on hover */
   z-index: 1;
 }
 
@@ -27,11 +27,11 @@
   width: 100%;
   display: none;
   padding: 1rem;
-  transition: opacity 0.3s ease-in-out; /* Smooth fade-in transition */
-  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  overflow: hidden;
 }
-
 #buyer .card:hover .card-hover {
   display: block;
-  opacity: 1; /* Fade in on hover */
+  opacity: 1;
 }
