@@ -59,7 +59,7 @@ const CardSection = () => {
                       data-wow-delay="0.6s"
                       to={data.link}
                     >
-                      Visit
+                      Visit more
                     </Link>
                   </div>
                 </div>
