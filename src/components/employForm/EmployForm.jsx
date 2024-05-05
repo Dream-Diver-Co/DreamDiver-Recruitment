@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/images/logo/logo.webp";
+import logo from "../../assets/images/logo/logo12.png";
 import "./form.css";
 import { Link } from "react-router-dom";
 const EmployForm = () => {
