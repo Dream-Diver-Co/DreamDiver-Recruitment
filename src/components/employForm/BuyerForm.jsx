@@ -1,6 +1,6 @@
 import React from "react";
 import "./form.css";
-import logo from "../../assets/images/logo/logo.webp";
+import logo from "../../assets/images/logo/logo12.png";
 import { Link } from "react-router-dom";
 const BuyerForm = () => {
   return (
