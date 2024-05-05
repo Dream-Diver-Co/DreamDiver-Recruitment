@@ -16,18 +16,6 @@ const EmployForm = () => {
           <br />
         </div>
         <div className="col-md-9 register-right">
-          <ul className="nav nav-tabs nav-justified" id="myTab" role="tablist">
-            <li className="nav-item">
-              <Link className="nav-link active" to="/employ">
-                Employee
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/buyer">
-                Buyer
-              </Link>
-            </li>
-          </ul>
           <div className="tab-content" id="myTabContent">
             <div
               className="tab-pane fade show active"
