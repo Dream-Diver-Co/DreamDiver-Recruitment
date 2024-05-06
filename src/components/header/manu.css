@@ -1,23 +1,35 @@
-.SiteMenu__card.Card {
+.mega_card {
+  background-color: black !important;
   position: relative;
   height: 100%;
   z-index: 1;
   box-shadow: rgba(50, 50, 93, 0.25), 0 30px 60px -30px rgba(0, 0, 0, 0.3);
-  margin: 58px;
+  border-radius: 5px;
 }
 .mega-menu-bg {
   background-color: rgba(84, 82, 82, 0.742);
 }
 .mega-menu-active {
   color: var(--green-primary) !important;
+  background-color: antiquewhite;
+  width: 100%;
+  color: black !important;
 }
-.mega-menu-bg a:hover {
+.mega-menu-bg li:hover {
+  background-color: #867e7e;
   color: var(--green-primary) !important;
 }
-
+.mega-menu-bg a:hover {
+  color: var(--dark-primary) !important;
+}
 .mega-hidden {
   display: none;
 }
 .mega-show {
   display: block;
+}
+
+.sub-mega-menu ul li:hover {
+  background-color: #867e7e;
+  color: var(--green-primary) !important;
 }

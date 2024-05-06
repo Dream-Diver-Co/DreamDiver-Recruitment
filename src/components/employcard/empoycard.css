@@ -24,14 +24,18 @@
 }
 
 #employ .card-hover {
+  position: relative;
   width: 100%;
-  display: none;
-  padding: 1rem;
-  transition: opacity 0.3s ease-in-out; /* Smooth fade-in transition */
-  opacity: 0; /* Initially hidden */
+  height: 0;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  overflow: hidden;
 }
 
 #employ .card:hover .card-hover {
-  display: block;
-  opacity: 1; /* Fade in on hover */
+  opacity: 100;
+  height: 5rem;
+  position: absolute;
+  bottom: 0;
+  background-color: #fefefe;
 }
