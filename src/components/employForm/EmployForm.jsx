@@ -24,7 +24,7 @@ const EmployForm = () => {
               aria-labelledby="home-tab"
             >
               <h3 style={{ color: "#005025" }} className="register-heading">
-                Apply as a Employee
+                Find A Suitable Job
               </h3>
               <div className="row register-form">
                 <div className="col-md-6">
