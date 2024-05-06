@@ -45,13 +45,13 @@ const CardSection = () => {
         <h1 className="py-3">Make your dreams a reality</h1>
         <div className="grid-card">
           {makeYourDreamCard.map((data, index) => (
-            <div key={index} className={`card card${index}`}>
+            <div key={index} className={`card p-0 card${index}`}>
               <img className="img-fluid" src={data.image} alt="" />
               <div className="card-hover">
-                <div className="row justify-content-center align-items-center">
+                <div className="row p-2 justify-content-center align-items-center">
                   <div className="col">
                     <h6>{data.title}</h6>
-                    <p>{data.price}</p>
+                    <p className="text-dark">{data.price}</p>
                   </div>
                   <div className="col">
                     <Link

@@ -10,17 +10,16 @@ import TecnicalJobs from "./TecnicalJobs";
 import HouseHoldjobs from "./HouseHoldjobs";
 const Manu0 = () => {
   const [hoverData, setHoverData] = useState(null);
-
   return (
-    <div className="card">
+    <div className="mega_card">
       <div className="bg-dark">
         <div className="row">
           <div className="mega-menu-bg col-md-4">
-            <ul className="mega-menu-category">
+            <ul className="mega-menu-category my-4 p-0">
               <li className="d-flex justify-items-center m-1 p-1 text-center">
                 <AiFillCode className="m-1 fs-5" />
                 <Link
-                  className="text-white mega-menu-active"
+                  className="text-white "
                   to="/"
                   onMouseEnter={() => setHoverData(0)}
                 >
@@ -29,13 +28,13 @@ const Manu0 = () => {
               </li>
               <li className="d-flex justify-items-center m-1 p-1 text-center">
                 <FaBusinessTime className="m-1 fs-5" />
-                <a
+                <Link
                   className="text-white "
-                  href="/"
+                  to="/"
                   onMouseEnter={() => setHoverData(1)}
                 >
                   Hard Jobs
-                </a>
+                </Link>
               </li>
               <li className="d-flex justify-items-center m-1 p-1 text-center">
                 <GrTechnology className="m-1 fs-5" />

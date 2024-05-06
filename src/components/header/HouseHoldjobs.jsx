@@ -5,10 +5,10 @@ import { GrTechnology } from "react-icons/gr";
 
 const HouseHoldjobs = () => {
   return (
-    <div className="col-md-8">
+    <div className="col-md-8 sub-mega-menu my-4">
       <div className="row">
         <div className="col-md-6">
-          <ul>
+          <ul className="p-0">
             <li className="d-flex justify-items-center m-1 p-1 text-left">
               <AiFillCode className="m-1 fs-5" />
               <a className="text-white" href="/">
