@@ -24,7 +24,7 @@ const BuyerForm = () => {
               aria-labelledby="home-tab"
             >
               <h3 style={{ color: "#005025" }} className="register-heading">
-                Apply as a Buyer
+                Post A Job: Find Skilled Employee
               </h3>
               <div className="row register-form">
                 <div className="col-md-6">
