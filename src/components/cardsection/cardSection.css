@@ -11,7 +11,7 @@
 }
 
 #buyer .card:hover {
-  transform: scale(1.07); /* Slightly larger scale on hover */
+  transform: scale(1.2); /* Slightly larger scale on hover */
   z-index: 1;
 }
 
