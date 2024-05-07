@@ -8,15 +8,19 @@
   /* margin-bottom: 5px; */
 }
 
-.jobs > img {
+.jobs img {
   height: 20px;
   margin-right: 10px;
   /* background-color: #ffc24e;
     color: #ffc24e; */
 }
 
-.jobs > h5 {
+.jobs h5 {
   margin-left: 10px;
   font-size: 14px;
   font-weight: 500;
+}
+.nav-link:hover {
+  color: var(--green-primary) !important;
+  transition: all 1s;
 }

@@ -46,7 +46,9 @@ const CardSection = () => {
         <div className="grid-card">
           {makeYourDreamCard.map((data, index) => (
             <div key={index} className={`card p-0 card${index}`}>
-              <img className="img-fluid" src={data.image} alt="" />
+              <Link to={data.link}>
+                <img className="img-fluid" src={data.image} alt="" />
+              </Link>
               <div className="card-hover">
                 <div className="row p-2 justify-content-center align-items-center">
                   <div className="col">

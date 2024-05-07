@@ -123,29 +123,31 @@ const JobCategory = () => {
     },
   ];
   return (
-    <div className="jobCategory">
-      <div className="jobCategory__heading">
-        <h1 className="py-3">Browse top job categories</h1>
-      </div>
-      <div className="jobCategory__icons">
-        {softJobs.map((data, index) => (
-          <Jobs key={index} title={data.title} img={data.icon} />
-        ))}
-      </div>
-      <div className="jobCategory__icons">
-        {HardJobs.map((data, index) => (
-          <Jobs key={index} title={data.title} img={data.icon} />
-        ))}
-      </div>
-      <div className="jobCategory__icons">
-        {technicalJobs.map((data, index) => (
-          <Jobs key={index} title={data.title} img={data.icon} />
-        ))}
-      </div>
-      <div className="jobCategory__icons">
-        {householdJobs.map((data, index) => (
-          <Jobs key={index} title={data.title} img={data.icon} />
-        ))}
+    <div className="container">
+      <div className="jobCategory">
+        <div className="jobCategory__heading">
+          <h1 className="py-3">Browse top job categories</h1>
+        </div>
+        <div className="jobCategory__icons">
+          {softJobs.map((data, index) => (
+            <Jobs key={index} title={data.title} img={data.icon} />
+          ))}
+        </div>
+        <div className="jobCategory__icons">
+          {HardJobs.map((data, index) => (
+            <Jobs key={index} title={data.title} img={data.icon} />
+          ))}
+        </div>
+        <div className="jobCategory__icons">
+          {technicalJobs.map((data, index) => (
+            <Jobs key={index} title={data.title} img={data.icon} />
+          ))}
+        </div>
+        <div className="jobCategory__icons">
+          {householdJobs.map((data, index) => (
+            <Jobs key={index} title={data.title} img={data.icon} />
+          ))}
+        </div>
       </div>
     </div>
   );
