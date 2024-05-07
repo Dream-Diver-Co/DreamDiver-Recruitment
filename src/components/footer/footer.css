@@ -1,6 +1,6 @@
 .footer {
   background-color: #161e2c;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .footer > hr {
@@ -21,12 +21,8 @@
 }
 
 .footer__top--left > img {
-  height: 50px;
-  width: 50px;
-  background-color: white;
   margin-bottom: 20px;
   text-align: center;
-  border-radius: 50%;
 }
 
 .footer__top--left > p {
@@ -41,13 +37,6 @@
 
 .footer__top--left > p > .MuiIcon-root {
   margin-right: 10px;
-}
-
-.footer__top--right {
-  display: flex;
-  justify-content: space-evenly;
-  flex: 0.8;
-  padding: 20px;
 }
 
 .footer__top--right-one,
