@@ -17,7 +17,6 @@ const Footer = () => {
               <p>Contests</p>
               <p>Enterprise</p>
               <p>Local Jobs</p>
-              <p>Showcase</p>
               <p>API for Developers</p>
               <p>Get Verified</p>
             </div>
