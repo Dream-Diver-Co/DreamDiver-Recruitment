@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../../assets/images/logo/logo12.png";
 import "./form.css";
 import { Link } from "react-router-dom";
+import GoogleReCaptcha from "../googleReCaptcha/GoogleReCaptcha";
 const EmployForm = () => {
   return (
     <div className="container register">
@@ -153,6 +154,7 @@ const EmployForm = () => {
                     />
                   </div>
                 </div>
+                <GoogleReCaptcha />
                 <input
                   type="submit"
                   className="btnRegister m-auto btn-five"

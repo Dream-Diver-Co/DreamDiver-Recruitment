@@ -1,6 +1,7 @@
 import React from "react";
 import "../signup/signup.css";
 import { Link } from "react-router-dom";
+import GoogleReCaptcha from "../googleReCaptcha/GoogleReCaptcha";
 const SignIn = () => {
   return (
     <div className="container my-5">
@@ -29,6 +30,7 @@ const SignIn = () => {
             Don't Have account SignUp here
           </Link>
         </fieldset>
+        <GoogleReCaptcha />
         <button className="btn-five" type="submit">
           Sign Up
         </button>
