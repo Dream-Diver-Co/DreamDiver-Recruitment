@@ -4,45 +4,71 @@ import { FaFacebook, FaInstagram } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { RiYoutubeFill } from "react-icons/ri";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="footer">
       <div className="container">
-        <div className="row">
-          <div className="col col-md-3">
-            <div className="footer__top--right-one">
-              <h4>Freelancer</h4>
-              <p>Categories</p>
-              <p>Projects</p>
-              <p>Contests</p>
-              <p>Enterprise</p>
-              <p>Local Jobs</p>
-              <p>Get Verified</p>
-            </div>
-          </div>
-          <div className="col col-md-3">
+        <div className="row pt-3 justify-content-center">
+          <div className="col col-md-4">
             <div className="footer__top--right-two">
-              <h4>About</h4>
-              <p>About Us</p>
-              <p>How it Works</p>
-              <p>Security</p>
-              <p>Investor</p>
-              <p>Sitemap</p>
-              <p>Quotes</p>
-              <p>News</p>
+              <h4>
+                <Link className="text-white" to="/">
+                  {" "}
+                  About{" "}
+                </Link>
+              </h4>
+              <p>
+                <Link className="text-white" to="/">
+                  About Us
+                </Link>
+              </p>
+              <p>
+                <Link className="text-white" to="/">
+                  How it Works
+                </Link>
+              </p>
+              <p>
+                <Link className="text-white" to="/">
+                  Security
+                </Link>
+              </p>
             </div>
           </div>
-          <div className="col col-md-3">
+          <div className="col col-md-4">
             <div className="footer__top--right-three">
               <h4>Terms</h4>
-              <p>Privacy </p>
-              <p>Terms and Conditions</p>
-              <p>Copyright</p>
-              <p>Code of Conduct</p>
-              <p>Fees and Charges</p>
+              <p>
+                {" "}
+                <Link className="text-white" to="/">
+                  Privacy
+                </Link>
+              </p>
+              <p>
+                {" "}
+                <Link className="text-white" to="/">
+                  Terms and Conditions
+                </Link>
+              </p>
+              <p>
+                <Link className="text-white" to="/">
+                  Copyright
+                </Link>
+              </p>
+              <p>
+                <Link className="text-white" to="/">
+                  {" "}
+                  Code of Conduct{" "}
+                </Link>
+              </p>
+              <p>
+                <Link className="text-white" to="/">
+                  Fees and Charges
+                </Link>
+              </p>
             </div>
           </div>
-          <div className="col col-md-3">
+          <div className="col col-md-4">
             <div className="footer__top--right-four">
               <h4>Apps</h4>
               <img
@@ -55,10 +81,18 @@ const Footer = () => {
                 alt="apple"
               />
               <p>
-                <FaFacebook />
-                <AiFillTwitterCircle />
-                <RiYoutubeFill />
-                <FaInstagram />
+                <Link className="text-white m-2" to="/">
+                  <FaFacebook />
+                </Link>
+                <Link className="text-white m-2" to="/">
+                  <AiFillTwitterCircle />
+                </Link>
+                <Link className="text-white m-2" to="/">
+                  <RiYoutubeFill />
+                </Link>
+                <Link className="text-white m-2" to="/">
+                  <FaInstagram />
+                </Link>
               </p>
             </div>
           </div>

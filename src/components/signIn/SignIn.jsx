@@ -9,7 +9,7 @@ const SignIn = () => {
         <h1>Sign In</h1>
 
         <fieldset>
-          <label for="name">UserName/Email:</label>
+          <label for="name">Username/Email:</label>
           <input type="text" id="name" name="user_name" />
           <label for="password">Password:</label>
           <input type="password" id="password" name="user_password" />

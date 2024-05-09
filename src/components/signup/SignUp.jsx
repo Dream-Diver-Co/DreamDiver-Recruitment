@@ -20,7 +20,7 @@ const SignUp = () => {
 
           <label for="password">Password:</label>
           <input type="password" id="password" name="user_password" />
-          <label for="password">confirm Password:</label>
+          <label for="password">Confirm Password:</label>
           <input type="password" id="password" name="user_password" />
         </fieldset>
 
