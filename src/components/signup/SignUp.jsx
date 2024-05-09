@@ -1,5 +1,6 @@
 import React from "react";
 import "./signup.css";
+import GoogleReCaptcha from "../googleReCaptcha/GoogleReCaptcha";
 const SignUp = () => {
   return (
     <div>
@@ -83,8 +84,8 @@ const SignUp = () => {
             Business
           </label>
         </fieldset>
-
-        <button className="btn-five" type="submit">
+        <GoogleReCaptcha className="p-2" />
+        <button className="btn-five mt-2" type="submit">
           Sign Up
         </button>
       </form>
