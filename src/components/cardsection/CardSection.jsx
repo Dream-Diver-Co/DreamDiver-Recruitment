@@ -12,31 +12,31 @@ const CardSection = () => {
       title: "AI generated art.",
       price: "$200 USD in 7 days",
       image: card1,
-      link: "/buyer",
+      link: "/recruiter",
     },
     {
       title: "AI generated art.",
       price: "$200 USD in 7 days",
       image: card2,
-      link: "/buyer",
+      link: "/recruiter",
     },
     {
       title: "AI generated art.",
       price: "$200 USD in 7 days",
       image: card3,
-      link: "/buyer",
+      link: "/recruiter",
     },
     {
       title: "AI generated art.",
       price: "$200 USD in 7 days",
       image: card4,
-      link: "/buyer",
+      link: "/recruiter",
     },
     {
       title: "AI generated art.",
       price: "$200 USD in 7 days",
       image: card5,
-      link: "/buyer",
+      link: "/recruiter",
     },
   ];
   return (

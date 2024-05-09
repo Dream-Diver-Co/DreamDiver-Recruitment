@@ -36,7 +36,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/employ" element={<EmployApply />} />
-              <Route path="/buyer" element={<BuyerApply />} />
+              <Route path="/recruiter" element={<BuyerApply />} />
               <Route path="/signup" element={<SignUP />} />
               <Route path="/signin" element={<SignInPage />} />
             </Routes>
