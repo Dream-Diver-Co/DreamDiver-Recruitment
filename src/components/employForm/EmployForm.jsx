@@ -1,9 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/images/logo/logo12.png";
 import "./form.css";
 import { Link } from "react-router-dom";
-import GoogleReCaptcha from "../googleReCaptcha/GoogleReCaptcha";
+import ReCAPTCHA from "react-google-recaptcha";
 const EmployForm = () => {
+  const [formData, setFormData] = useState({
+    fullName: "",
+    address: "",
+    coverLater: "",
+    education: "",
+    skills: "",
+    joinDate: "",
+    portfolioLink: "",
+    email: "",
+    txtEmpPhone: "",
+    resume: "",
+    possition: "",
+    workExperience: "",
+    reference: "",
+    companyCulture: "",
+  });
+  const [Verified, setVerified] = useState(false);
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!Verified) {
+      alert("Please verify the reCAPTCHA.");
+      return;
+    }
+    // Your submit logic here, like sending formData to the server
+    console.log("Form submitted:", formData);
+  };
   return (
     <div className="container register">
       <div className="row">
@@ -16,7 +49,7 @@ const EmployForm = () => {
           </Link>
           <br />
         </div>
-        <div className="col-md-9 register-right">
+        <from onSubmit={handleSubmit} className="col-md-9 register-right">
           <div className="tab-content" id="myTabContent">
             <div
               className="tab-pane fade show active"
@@ -34,7 +67,9 @@ const EmployForm = () => {
                       type="text"
                       className="form-control"
                       placeholder="Full-Name *"
-                      value=""
+                      name="fullName"
+                      onChange={handleChange}
+                      value={formData.fullName}
                     />
                   </div>
                   <div className="form-group">
@@ -42,7 +77,9 @@ const EmployForm = () => {
                       type="text"
                       className="form-control"
                       placeholder="Address  *"
-                      value=""
+                      onChange={handleChange}
+                      name="address"
+                      value={formData.address}
                     />
                   </div>
                   <div className="form-group">
@@ -50,7 +87,9 @@ const EmployForm = () => {
                       type="text"
                       className="form-control"
                       placeholder="Cover later *"
-                      value=""
+                      onChange={handleChange}
+                      name="coverLater"
+                      value={formData.coverLater}
                     />
                   </div>
                   <div className="form-group">
@@ -58,7 +97,9 @@ const EmployForm = () => {
                       type="text"
                       className="form-control"
                       placeholder="Education *"
-                      value=""
+                      onChange={handleChange}
+                      name="education"
+                      value={formData.education}
                     />
                   </div>
                   <div className="form-group">
@@ -66,7 +107,9 @@ const EmployForm = () => {
                       type="text"
                       className="form-control"
                       placeholder="Skills *"
-                      value=""
+                      onChange={handleChange}
+                      name="skills"
+                      value={formData.skills}
                     />
                   </div>
                   <div className="form-group">
@@ -74,7 +117,9 @@ const EmployForm = () => {
                       type="text"
                       className="form-control"
                       placeholder="Join Date *"
-                      value=""
+                      onChange={handleChange}
+                      name="joinDate"
+                      value={formData.joinDate}
                     />
                   </div>
                   <div className="form-group ">
@@ -82,7 +127,9 @@ const EmployForm = () => {
                       type="text"
                       className="form-control"
                       placeholder="Portfolio link *"
-                      value=""
+                      name="portfolioLink"
+                      onChange={handleChange}
+                      value={formData.portfolioLink}
                     />
                   </div>
                 </div>
@@ -92,7 +139,9 @@ const EmployForm = () => {
                       type="email"
                       className="form-control"
                       placeholder="Your Email *"
-                      value=""
+                      name="email"
+                      onChange={handleChange}
+                      value={formData.email}
                     />
                   </div>
                   <div className="form-group">
@@ -103,7 +152,8 @@ const EmployForm = () => {
                       name="txtEmpPhone"
                       className="form-control"
                       placeholder="Your Phone *"
-                      value=""
+                      onChange={handleChange}
+                      value={formData.txtEmpPhone}
                     />
                   </div>
                   <div className="form-group">
@@ -111,6 +161,9 @@ const EmployForm = () => {
                       type="file"
                       className="form-control"
                       placeholder="Upload/Resume *"
+                      onChange={handleChange}
+                      name="resume"
+                      value={formData.resume}
                     />
                   </div>
                   <div className="form-group">
@@ -118,7 +171,9 @@ const EmployForm = () => {
                       type="text-area"
                       className="form-control"
                       placeholder="Possition *"
-                      value=""
+                      onChange={handleChange}
+                      name="possition"
+                      value={formData.possition}
                     />
                   </div>
                   <div className="form-group">
@@ -126,7 +181,9 @@ const EmployForm = () => {
                       type="text"
                       className="form-control"
                       placeholder="Work Experience *"
-                      value=""
+                      onChange={handleChange}
+                      name="workExperience"
+                      value={formData.workExperience}
                     />
                   </div>
                   <div className="form-group">
@@ -134,7 +191,9 @@ const EmployForm = () => {
                       type="text"
                       className="form-control"
                       placeholder="Reference *"
-                      value=""
+                      onChange={handleChange}
+                      name="reference"
+                      value={formData.reference}
                     />
                   </div>
                   <div className="form-group">
@@ -142,7 +201,9 @@ const EmployForm = () => {
                       type="text"
                       className="form-control"
                       placeholder="Expect Salary *"
-                      value=""
+                      onChange={handleChange}
+                      name="expectSalary"
+                      value={formData.expectSalary}
                     />
                   </div>
                   <div className="form-group">
@@ -150,11 +211,16 @@ const EmployForm = () => {
                       type="text"
                       className="form-control"
                       placeholder="Additional Comment *"
-                      value=""
+                      onChange={handleChange}
+                      name="additionalComment"
+                      value={formData.additionalComment}
                     />
                   </div>
                 </div>
-                <GoogleReCaptcha />
+                <ReCAPTCHA
+                  sitekey="6LfDstkpAAAAAOJKaEQw9sgvSySi24oqIx7ig-0T"
+                  onChange={(value) => setVerified(value)}
+                />
                 <input
                   type="submit"
                   className="btnRegister m-auto btn-five"
@@ -163,7 +229,7 @@ const EmployForm = () => {
               </div>
             </div>
           </div>
-        </div>
+        </from>
       </div>
     </div>
   );
