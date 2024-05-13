@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "../signup/signup.css";
 import { Link } from "react-router-dom";
-import GoogleReCaptcha from "../googleReCaptcha/GoogleReCaptcha";
+import ReCAPTCHA from "react-google-recaptcha";
 const SignIn = () => {
+  const [Verified, setVerified] = useState(false);
+  console.log(Verified + " successful");
   return (
     <div className="container my-5">
       <form action="index.html" method="post">
@@ -30,7 +32,10 @@ const SignIn = () => {
             Don't Have account SignUp here
           </Link>
         </fieldset>
-        <GoogleReCaptcha />
+        <ReCAPTCHA
+          sitekey="6LfDstkpAAAAAOJKaEQw9sgvSySi24oqIx7ig-0T"
+          onChange={(value) => setVerified(value)}
+        />
         <button className="btn-five" type="submit">
           Sign Up
         </button>
