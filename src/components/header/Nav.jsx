@@ -28,7 +28,7 @@ const Nav = () => {
       </li>
       <li className="nav-item">
         <Link
-          to="/buyer"
+          to="/recruiter"
           onMouseEnter={(event) => {
             setHovering(1);
             setPopoverLeft(event.currentTarget.offsetLeft);
