@@ -35,7 +35,7 @@ const Nav = () => {
           }}
           className="nav-link"
         >
-          Find Your Perfect employ
+          Find Your Perfect employee
         </Link>
       </li>
       {typeof hovering === "number" && (
