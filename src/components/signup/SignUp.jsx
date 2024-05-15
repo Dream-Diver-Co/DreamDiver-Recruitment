@@ -84,7 +84,7 @@ const SignUp = () => {
             Business
           </label>
         </fieldset>
-        <GoogleReCaptcha className="p-2" />
+        <GoogleReCaptcha className="p-2 m-2 d-flex justify-content-center" />
         <button className="btn-five mt-2" type="submit">
           Sign Up
         </button>

@@ -9,7 +9,7 @@ const GoogleReCaptcha = ({ className }) => {
     <div className="googleCaptcha m-2 p-2">
       <ReCAPTCHA
         className={className}
-        sitekey="6LfDstkpAAAAAOJKaEQw9sgvSySi24oqIx7ig-0T"
+        sitekey="6LftLt0pAAAAAFlhGGN6dSLeey_a2ovjT-freAzU"
         onChange={onChange}
       />
     </div>
