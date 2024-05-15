@@ -218,7 +218,8 @@ const EmployForm = () => {
                   </div>
                 </div>
                 <ReCAPTCHA
-                  sitekey="6LfDstkpAAAAAOJKaEQw9sgvSySi24oqIx7ig-0T"
+                  className="d-flex justify-content-center  m-2"
+                  sitekey="6LftLt0pAAAAAFlhGGN6dSLeey_a2ovjT-freAzU"
                   onChange={(value) => setVerified(value)}
                 />
                 <input
